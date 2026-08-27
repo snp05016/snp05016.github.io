@@ -262,8 +262,8 @@
             </div>
           </div>
 
-          <!-- GitHub Activity & Consistency Card -->
-          <div class="bento-card bento-col-span-3 spotlight-card github-activity-card">
+          <!-- GitHub Engineering & Activity Signal -->
+          <div class="bento-card bento-col-span-3 spotlight-card github-stats-card">
             <div class="card-inner">
               <div class="github-card-header">
                 <div class="github-header-left">
@@ -271,8 +271,8 @@
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                   </div>
                   <div>
-                    <h3 class="bento-card-title" style="margin-bottom: 0.2rem;">Code Activity &amp; Consistency</h3>
-                    <span class="github-sub-handle">github.com/snp05016 &bull; 22+ Repositories</span>
+                    <h3 class="bento-card-title" style="margin-bottom: 0.2rem;">GitHub Codebase &amp; Repository Stats</h3>
+                    <span class="github-sub-handle">@snp05016 &bull; Public Activity &amp; Codebases</span>
                   </div>
                 </div>
                 <a href="https://github.com/snp05016" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
@@ -281,17 +281,85 @@
                 </a>
               </div>
 
-              <!-- Live Contribution Graph Container -->
-              <div class="github-graph-wrap">
-                <img src="https://ghchart.rshah.org/dfbe82/snp05016" alt="Saumya Patel's GitHub Contribution Graph" class="github-chart-img" loading="lazy">
+              <!-- 4-Stat Metric Strip -->
+              <div class="gh-metrics-row">
+                <div class="gh-metric-box">
+                  <span class="gh-metric-num">22+</span>
+                  <span class="gh-metric-label">Public Repositories</span>
+                </div>
+                <div class="gh-metric-box">
+                  <span class="gh-metric-num">8+</span>
+                  <span class="gh-metric-label">Active Languages</span>
+                </div>
+                <div class="gh-metric-box">
+                  <span class="gh-metric-num">3</span>
+                  <span class="gh-metric-label">Core Monorepos</span>
+                </div>
+                <div class="gh-metric-box">
+                  <span class="gh-metric-num">100%</span>
+                  <span class="gh-metric-label">Type-Safe &amp; CI-Guarded</span>
+                </div>
+              </div>
+
+              <!-- Featured Public Repos Grid -->
+              <div class="gh-repos-grid">
+                <a href="https://github.com/snp05016/buildSouq" class="gh-repo-card" target="_blank" rel="noopener noreferrer">
+                  <div class="gh-repo-head">
+                    <span class="gh-repo-name">buildSouq</span>
+                    <span class="gh-repo-badge">Public Monorepo</span>
+                  </div>
+                  <p class="gh-repo-desc">Enterprise B2B construction marketplace, Next.js 16, PostgreSQL 16 FORCE RLS, and zero-float BigInt arithmetic.</p>
+                  <div class="gh-repo-tags">
+                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-ts"></span>TypeScript</span>
+                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-sql"></span>PL/pgSQL</span>
+                  </div>
+                </a>
+
+                <a href="https://github.com/snp05016/nivesh" class="gh-repo-card" target="_blank" rel="noopener noreferrer">
+                  <div class="gh-repo-head">
+                    <span class="gh-repo-name">nivesh</span>
+                    <span class="gh-repo-badge">Fintech &amp; Multi-Agent</span>
+                  </div>
+                  <p class="gh-repo-desc">AI equity intelligence platform, 39 quant valuation engines, LangGraph debate council, and native SwiftUI iOS client.</p>
+                  <div class="gh-repo-tags">
+                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-py"></span>Python</span>
+                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-swift"></span>Swift</span>
+                  </div>
+                </a>
+
+                <a href="https://github.com/snp05016/psrs" class="gh-repo-card" target="_blank" rel="noopener noreferrer">
+                  <div class="gh-repo-head">
+                    <span class="gh-repo-name">psrs</span>
+                    <span class="gh-repo-badge">High-Perf Computing</span>
+                  </div>
+                  <p class="gh-repo-desc">Parallel Sorting by Regular Sampling algorithm implementation evaluating multi-threaded speedups across multicore systems.</p>
+                  <div class="gh-repo-tags">
+                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-cpp"></span>C++</span>
+                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-c"></span>POSIX C</span>
+                  </div>
+                </a>
+
+                <a href="https://github.com/snp05016/cbp2025" class="gh-repo-card" target="_blank" rel="noopener noreferrer">
+                  <div class="gh-repo-head">
+                    <span class="gh-repo-name">cbp2025</span>
+                    <span class="gh-repo-badge">Architecture Research</span>
+                  </div>
+                  <p class="gh-repo-desc">Championship Branch Prediction research benchmark evaluating branch predictor accuracy and instruction-level parallelism.</p>
+                  <div class="gh-repo-tags">
+                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-cpp"></span>C++</span>
+                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-py"></span>Python</span>
+                  </div>
+                </a>
               </div>
 
               <div class="github-card-footer">
                 <div class="gh-stat-item">
                   <span class="gh-stat-dot"></span>
-                  <span class="gh-stat-text">Live GitHub contribution timeline &amp; open source activity</span>
+                  <span class="gh-stat-text">Active production codebases, compilers, research repos &amp; algorithms</span>
                 </div>
-                <div class="gh-stat-pill">Continuous Shipping</div>
+                <a href="https://github.com/snp05016?tab=repositories" class="gh-more-link" target="_blank" rel="noopener noreferrer">
+                  <span>Explore all 22+ repos on GitHub &rarr;</span>
+                </a>
               </div>
             </div>
           </div>
