@@ -876,6 +876,105 @@ button:focus-visible {
   font-weight: 700;
 }
 
+/* GitHub Activity & Consistency Card */
+.github-activity-card {
+  background: #090a0d;
+  border-color: rgba(223, 190, 130, 0.15);
+}
+
+.github-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.github-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.github-icon-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: rgba(223, 190, 130, 0.08);
+  border: 1px solid var(--accent-gold-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-gold);
+}
+
+.github-sub-handle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.02em;
+}
+
+.github-graph-wrap {
+  background: #050608;
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.github-chart-img {
+  width: 100%;
+  max-width: 820px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+.github-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.gh-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.gh-stat-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  box-shadow: 0 0 8px rgba(223, 190, 130, 0.6);
+}
+
+.gh-stat-pill {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  background: rgba(223, 190, 130, 0.08);
+  border: 1px solid var(--accent-gold-border);
+  color: var(--accent-gold);
+}
+
 .focus-banner-card {
   background: linear-gradient(135deg, var(--bg-card) 0%, rgba(223, 190, 130, 0.04) 100%);
   border-color: rgba(223, 190, 130, 0.2);
