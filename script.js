@@ -262,6 +262,7 @@ function initHeroCounters() {
   counterElements.forEach(el => observer.observe(el));
 
   function animateCounter(el, target) {
+    const suffix = el.getAttribute('data-suffix') !== null ? el.getAttribute('data-suffix') : '+';
     let start = 0;
     const duration = 1200;
     const startTime = performance.now();
@@ -272,12 +273,12 @@ function initHeroCounters() {
       const ease = 1 - Math.pow(1 - progress, 3); // Ease-out cubic
       const current = Math.floor(ease * target);
 
-      el.textContent = current.toLocaleString() + '+';
+      el.textContent = current.toLocaleString() + suffix;
 
       if (progress < 1) {
         requestAnimationFrame(step);
       } else {
-        el.textContent = target.toLocaleString() + '+';
+        el.textContent = target.toLocaleString() + suffix;
       }
     }
 
