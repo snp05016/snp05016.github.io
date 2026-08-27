@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavSpy();
   initSpotlightEffect();
   initProjectFilters();
-  initStrategyTabs();
   initClipboardCopy();
   initHeroCounters();
   initBackToTop();
@@ -151,40 +150,7 @@ function initProjectFilters() {
 }
 
 /**
- * 5. Interactive Strategy & Reality TV Tabs
- */
-function initStrategyTabs() {
-  const stratBtns = document.querySelectorAll('.strat-btn');
-  const stratPanes = document.querySelectorAll('.strat-pane');
-
-  if (!stratBtns.length || !stratPanes.length) return;
-
-  stratBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const targetTab = btn.getAttribute('data-tab');
-
-      stratBtns.forEach(b => {
-        b.classList.remove('active');
-        b.setAttribute('aria-selected', 'false');
-      });
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected', 'true');
-
-      stratPanes.forEach(pane => {
-        if (pane.id === `strat-${targetTab}`) {
-          pane.style.display = 'block';
-          pane.classList.add('active');
-        } else {
-          pane.style.display = 'none';
-          pane.classList.remove('active');
-        }
-      });
-    });
-  });
-}
-
-/**
- * 6. Copy Email to Clipboard with Toast Notification
+ * 5. Copy Email to Clipboard with Toast Notification
  */
 function initClipboardCopy() {
   const copyButtons = document.querySelectorAll('.copy-btn');

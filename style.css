@@ -1023,11 +1023,56 @@ button:focus-visible {
 /* --------------------------------------------------------------------------
    9b. Project Interactive Architecture Decks & Simulators
    -------------------------------------------------------------------------- */
+.deck-expander {
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1rem;
+}
+
+.deck-expander-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  background: rgba(223, 190, 130, 0.05);
+  border: 1px solid var(--accent-gold-border);
+  padding: 0.65rem 1.15rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  list-style: none;
+  transition: all var(--transition-fast);
+}
+
+.deck-expander-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.deck-expander-toggle:hover {
+  background: rgba(223, 190, 130, 0.1);
+  border-color: var(--accent-gold);
+}
+
+.deck-expander[open] .expander-icon {
+  transform: rotate(45deg);
+}
+
+.expander-icon {
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: transform var(--transition-fast);
+}
+
+.deck-expander .project-interactive-deck {
+  margin-top: 1rem;
+}
+
 .project-interactive-deck {
   background: #0b0c10;
   border: 1px solid var(--border-card);
   border-radius: var(--radius-md);
-  margin-top: 1.75rem;
   overflow: hidden;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
 }
