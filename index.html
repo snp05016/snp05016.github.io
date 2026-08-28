@@ -4,1269 +4,424 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saumya Patel — Software Engineer &amp; Systems Builder</title>
-  <meta name="description" content="Personal portfolio of Saumya Patel. Computing Science student at the University of Alberta building compilers, distributed backends, and full-stack systems.">
+  <meta name="description" content="Personal website of Saumya Patel. Computing Science student at the University of Alberta building compilers, distributed backends, and full-stack systems.">
 
-  <!-- OpenGraph Meta Tags -->
-  <meta property="og:title" content="Saumya Patel — Software Engineer &amp; Systems Builder">
-  <meta property="og:description" content="Compilers, distributed backends, quant tools, and full-stack systems. CS at UAlberta.">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Saumya Patel — Software Engineer">
+  <meta property="og:description" content="Compilers, distributed systems, and quantitative platforms. CS at UAlberta.">
   <meta property="og:type" content="website">
 
-  <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono -->
+  <!-- Typography: Inter + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark-theme">
+<body>
 
-  <!-- Background Ambient Noise & Glows -->
-  <div class="noise-overlay" aria-hidden="true"></div>
-  <div class="ambient-glow glow-top" aria-hidden="true"></div>
-  <div class="ambient-glow glow-mid" aria-hidden="true"></div>
-  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+  <main class="page-wrapper">
 
-  <!-- Sticky Header & Navigation -->
-  <header class="site-header" id="top">
-    <div class="header-container">
-      <a href="#top" class="brand-logo" aria-label="Saumya Patel Home">
-        <div class="logo-mark">
-          <span class="logo-bracket">[</span><span class="logo-letters">sp</span><span class="logo-bracket">]</span>
+    <!-- Header Section -->
+    <header class="site-header">
+      <div class="header-main">
+        <div class="brand-group">
+          <h1 class="brand-name">Saumya Patel</h1>
+          <p class="brand-tagline">Software Engineer &bull; Computing Science (Specialization) at University of Alberta</p>
         </div>
-        <div class="logo-text-group">
-          <span class="brand-name">Saumya Patel</span>
-          <span class="brand-sub">UAlberta CS</span>
+        <div class="header-cta">
+          <a href="saumya_patel_resume.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Resume (PDF) ↗</a>
         </div>
-      </a>
+      </div>
 
-      <!-- Desktop Navigation Menu -->
-      <nav class="desktop-nav" aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#off-the-clock" class="nav-link">Off the Clock</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-
-      <!-- Right Header Actions -->
-      <div class="header-actions">
-        <div class="live-status-pill desktop-only">
-          <span class="status-indicator"></span>
-          <span class="status-label">Edmonton, AB</span>
-        </div>
-
-        <a href="saumya_patel_resume.pdf" class="btn btn-sm btn-resume" target="_blank" rel="noopener noreferrer">
-          <span>Resume</span>
-          <svg class="icon-arrow-diagonal" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-        </a>
-
-        <button class="mobile-toggle-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
-          <span class="bar bar-1"></span>
-          <span class="bar bar-2"></span>
+      <nav class="quick-nav" aria-label="Social and Quick Links">
+        <a href="https://github.com/snp05016" class="quick-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/saumya-patel32/" class="quick-link" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <button class="copy-email-btn" data-email="snp050106@gmail.com" aria-label="Copy primary email to clipboard">
+          <span class="email-text">snp050106@gmail.com</span>
+          <span class="copy-badge">Copy</span>
         </button>
+        <span class="quick-link location-badge">📍 Edmonton, AB</span>
+      </nav>
+    </header>
+
+    <hr class="divider">
+
+    <!-- Bio / Intro -->
+    <section class="section intro-section">
+      <p class="lead-text">
+        I build software from the kernel up, focusing on compiler optimization pipelines, PostgreSQL row-level security, and financial valuation engines.
+      </p>
+      <p class="sub-lead-text">
+        Outside the editor: lifting heavy, playing chess badly under time pressure, and overthinking reality TV.
+      </p>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Key Metrics Ticker -->
+    <section class="section metrics-strip" aria-label="Key Numbers">
+      <div class="metric-item">
+        <div class="metric-num">3.71</div>
+        <div class="metric-label">GPA / 4.0 &bull; CS Specialization</div>
       </div>
-    </div>
-
-    <!-- Mobile Drawer Overlay -->
-    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
-      <div class="drawer-backdrop" id="drawer-backdrop"></div>
-      <div class="drawer-panel">
-        <div class="drawer-status-banner">
-          <span class="status-indicator"></span>
-          <span>Building systems &amp; lifting in Edmonton</span>
-        </div>
-        <ul class="drawer-nav-list">
-          <li><a href="#about" class="drawer-link">01. About</a></li>
-          <li><a href="#projects" class="drawer-link">02. Projects</a></li>
-          <li><a href="#experience" class="drawer-link">03. Experience</a></li>
-          <li><a href="#skills" class="drawer-link">04. Technical Arsenal</a></li>
-          <li><a href="#off-the-clock" class="drawer-link">05. Off the Clock</a></li>
-          <li><a href="#contact" class="drawer-link">06. Contact</a></li>
-        </ul>
-        <div class="drawer-footer">
-          <a href="saumya_patel_resume.pdf" class="btn btn-primary w-full" target="_blank" rel="noopener noreferrer">
-            <span>Download Resume (.pdf)</span>
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-          </a>
-          <div class="drawer-email-preview">snp050106@gmail.com</div>
-        </div>
+      <div class="metric-item">
+        <div class="metric-num">8+</div>
+        <div class="metric-label">Languages (C++, Python, TS, C, SQL, Swift, RISC-V)</div>
       </div>
-    </div>
-  </header>
+      <div class="metric-item">
+        <div class="metric-num">150+</div>
+        <div class="metric-label">Students Mentored as Systems &amp; C TA</div>
+      </div>
+      <div class="metric-item">
+        <div class="metric-num">22+</div>
+        <div class="metric-label">Public Repositories on GitHub</div>
+      </div>
+    </section>
 
-  <main id="main-content">
-    
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container hero-container">
-        
-        <!-- Hero Meta Eyebrow -->
-        <div class="hero-meta-row reveal-fade">
-          <div class="hero-tag-badge">
-            <span class="tag-icon">⚡</span>
-            <span>BSc Computing Science (Specialization) &bull; UAlberta</span>
+    <hr class="divider">
+
+    <!-- Featured Projects -->
+    <section class="section" id="projects">
+      <div class="section-heading-row">
+        <h2 class="section-title">Featured Projects</h2>
+        <span class="section-sub">Production systems &amp; compilers</span>
+      </div>
+
+      <div class="projects-stack">
+
+        <!-- Project 1: BuildSouk -->
+        <article class="project-entry">
+          <div class="project-top-row">
+            <h3 class="project-title">
+              <a href="https://github.com/snp05016/buildSouq" class="project-title-link" target="_blank" rel="noopener noreferrer">BuildSouk</a>
+              <span class="project-subtitle">Enterprise B2B Construction Marketplace</span>
+            </h3>
+            <span class="entry-date">2026 – Present</span>
           </div>
-          <div class="hero-loc-badge desktop-only">
-            <span>📍 Edmonton, Alberta</span>
+          <p class="project-summary">
+            Enterprise supply chain marketplace for UAE building materials (steel, rebar, cement, aggregates). Built single-handedly from founder specifications to production monorepo.
+          </p>
+          <ul class="bullet-list">
+            <li><strong>PostgreSQL 16 Multi-Role Security:</strong> Enforced strict tenant isolation via database-level <code class="code-inline">FORCE RLS</code> across a 4-role connection pool, pairing with pure <code class="code-inline">BigInt</code> micro-fils arithmetic to eliminate floating-point rounding errors on legal commercial contracts.</li>
+            <li><strong>Deterministic Order FSM &amp; CI Verification:</strong> Engineered a 7-stage bilateral finite state machine protected by database triggers, backed by 229 unmocked Playwright E2E tests and automated <code class="code-inline">pg_catalog</code> schema assertion guards in CI/CD.</li>
+          </ul>
+          <div class="tags-row">
+            <span class="mono-tag">TypeScript</span>
+            <span class="mono-tag">Next.js 16</span>
+            <span class="mono-tag">PostgreSQL 16</span>
+            <span class="mono-tag">Drizzle ORM</span>
+            <span class="mono-tag">tRPC 11</span>
+            <span class="mono-tag">Playwright</span>
+            <span class="mono-tag">Redis</span>
           </div>
-        </div>
+        </article>
 
-        <!-- Massive Kinetic Typography -->
-        <h1 class="hero-headline reveal-fade" style="--delay: 100ms;">
-          <span class="hero-line">Building systems.</span>
-          <span class="hero-line gradient-text">Lowering compilers.</span>
-          <span class="hero-line">Lifting heavy.</span>
-        </h1>
-
-        <p class="hero-subtext reveal-fade" style="--delay: 200ms;">
-          Hey, I'm Saumya. I build software from the kernel up, exploring compiler optimization pipelines, PostgreSQL row-level security, and financial valuation engines. Outside the editor: lifting heavy, playing chess badly under time pressure, and overthinking reality TV.
-        </p>
-
-        <!-- Hero Actions -->
-        <div class="hero-action-strip reveal-fade" style="--delay: 300ms;">
-          <a href="#projects" class="btn btn-primary btn-lg">
-            <span>Explore Projects</span>
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
-          </a>
-          <a href="#contact" class="btn btn-outline btn-lg">
-            <span>Get in touch</span>
-          </a>
-          <div class="hero-social-links">
-            <a href="https://github.com/snp05016" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/in/saumya-patel32/" class="social-icon-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
-            </a>
+        <!-- Project 2: Nivesh -->
+        <article class="project-entry">
+          <div class="project-top-row">
+            <h3 class="project-title">
+              <a href="https://github.com/snp05016/nivesh" class="project-title-link" target="_blank" rel="noopener noreferrer">Nivesh</a>
+              <span class="project-subtitle">AI Equity Intelligence &amp; Derivatives Platform</span>
+            </h3>
+            <span class="entry-date">2026 – Present</span>
           </div>
-        </div>
-
-        <!-- Bento Hero Metric Ticker -->
-        <div class="hero-bento-strip reveal-fade" style="--delay: 400ms;">
-          <div class="bento-metric-cell spotlight-card">
-            <div class="metric-top">
-              <span class="metric-val" data-counter="8" data-suffix="+">8+</span>
-              <span class="metric-badge">Languages</span>
-            </div>
-            <div class="metric-desc">C++, Python, TypeScript, C, SQL, Swift, RISC-V, and Bash</div>
+          <p class="project-summary">
+            Full-stack quantitative research, options valuation, and multi-agent equity analysis platform for Indian equities (NSE/BSE).
+          </p>
+          <ul class="bullet-list">
+            <li><strong>Quantitative Pricing &amp; Multi-Agent Consensus:</strong> Built 39 analytical valuation engines (Black-Scholes Greeks, Newton-Raphson IV solver, Conformal prediction with 90% finite coverage) coordinated with a LangGraph 4-agent debate council.</li>
+            <li><strong>High-Throughput Core &amp; Native iOS App:</strong> Engineered an asynchronous FastAPI backend with isolated worker execution, paired with a 77-view native SwiftUI iOS client with custom Banknote design and WidgetKit support.</li>
+          </ul>
+          <div class="tags-row">
+            <span class="mono-tag">FastAPI</span>
+            <span class="mono-tag">Python</span>
+            <span class="mono-tag">SwiftUI</span>
+            <span class="mono-tag">PostgreSQL</span>
+            <span class="mono-tag">LangGraph</span>
+            <span class="mono-tag">Celery</span>
+            <span class="mono-tag">ChromaDB</span>
+            <span class="mono-tag">Polars</span>
           </div>
+        </article>
 
-          <div class="bento-metric-cell spotlight-card">
-            <div class="metric-top">
-              <span class="metric-val" data-counter="150" data-suffix="+">150+</span>
-              <span class="metric-badge">Mentorship</span>
-            </div>
-            <div class="metric-desc">Undergraduate students taught in C systems &amp; RISC-V architecture as TA</div>
+        <!-- Project 3: Gazprea Compiler -->
+        <article class="project-entry">
+          <div class="project-top-row">
+            <h3 class="project-title">
+              <span>Gazprea</span>
+              <span class="project-subtitle">Optimizing Compiler (Ranked 1st in Class)</span>
+            </h3>
+            <span class="entry-date">2025 – 2026</span>
           </div>
-
-          <div class="bento-metric-cell spotlight-card">
-            <div class="metric-top">
-              <span class="metric-val">3.71</span>
-              <span class="metric-badge">Academics</span>
-            </div>
-            <div class="metric-desc">GPA in BSc Computing Science (Specialization) at University of Alberta</div>
+          <p class="project-summary">
+            Optimizing C++20 compiler for an imperative array/matrix language, lowering AST to MLIR dialects and LLVM IR.
+          </p>
+          <ul class="bullet-list">
+            <li><strong>CRTP Static Polymorphism &amp; MLIR Pipeline:</strong> Engineered end-to-end AST lowering through ANTLR4, static polymorphic symbol resolution, semantic type checking across 7 MLIR dialects, and LLVM -O3 passes.</li>
+            <li><strong>Control-Flow Analysis &amp; Test Suite:</strong> Built directed CFG basic blocks, reachability validation, and dead code pruning, verified by a 1,552+ test regression harness ranking 1st in class for correctness.</li>
+          </ul>
+          <div class="tags-row">
+            <span class="mono-tag">C++20</span>
+            <span class="mono-tag">LLVM</span>
+            <span class="mono-tag">MLIR (7 Dialects)</span>
+            <span class="mono-tag">ANTLR4</span>
+            <span class="mono-tag">CMake</span>
+            <span class="mono-tag">Static Analysis</span>
+            <span class="mono-tag">GDB</span>
           </div>
-
-          <div class="bento-metric-cell spotlight-card">
-            <div class="metric-top">
-              <span class="metric-val" data-counter="3" data-suffix="">3</span>
-              <span class="metric-badge">Architectures</span>
-            </div>
-            <div class="metric-desc">Flagship platforms built: B2B marketplace, AI equity engine, and C++20 compiler</div>
-          </div>
-        </div>
+        </article>
 
       </div>
     </section>
 
-    <!-- About Section (Bento Grid) -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-eyebrow-wrap">
-          <span class="eyebrow-tag">01 / Background</span>
-          <h2 class="section-heading">Driven by clean code, sound logic, and autonomy.</h2>
-        </div>
+    <hr class="divider">
 
-        <div class="about-bento-grid">
-          
-          <!-- Large Main Bio Card -->
-          <div class="bento-card bento-col-span-2 spotlight-card">
-            <div class="card-inner">
-              <h3 class="bento-card-title">The Engineering Core</h3>
-              <p class="bento-text">
-                I am a Computing Science student at the University of Alberta (graduating May 2028, 3.71 GPA). I like knowing how things work down to the hardware and kernel: how compilers lower ASTs into MLIR dialects and native assembly, how databases enforce tenant security at the storage engine level, and how mathematical engines calculate option Greeks without floating-point artifacts.
-              </p>
-              <p class="bento-text">
-                I have worked as the sole software engineer architecting an enterprise B2B platform in production, researched compiler optimization under Prof. J. Nelson Amaral, and taught systems and C programming to over 150 undergraduate students as a Teaching Assistant.
-              </p>
-
-              <div class="engineering-pillars">
-                <div class="pillar-item">
-                  <span class="pillar-num">01</span>
-                  <div class="pillar-content">
-                    <strong>Rigorous testing over guesswork:</strong>
-                    <span>I write heavy regression suites, fuzz testing, and assertions before calling anything finished.</span>
-                  </div>
-                </div>
-                <div class="pillar-item">
-                  <span class="pillar-num">02</span>
-                  <div class="pillar-content">
-                    <strong>Low-latency &amp; resource efficiency:</strong>
-                    <span>Every un-indexed query, unnecessary abstraction, and memory leak matters. Keep systems lean.</span>
-                  </div>
-                </div>
-                <div class="pillar-item">
-                  <span class="pillar-num">03</span>
-                  <div class="pillar-content">
-                    <strong>Clear technical documentation:</strong>
-                    <span>Transparent architecture decision records (ADRs) beat corporate buzzwords every time.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Quick Profile Card -->
-          <div class="bento-card spotlight-card">
-            <div class="card-inner">
-              <h3 class="bento-card-title">Quick Profile</h3>
-              <ul class="profile-meta-list">
-                <li>
-                  <span class="p-label">Location</span>
-                  <span class="p-value">Edmonton, AB, Canada</span>
-                </li>
-                <li>
-                  <span class="p-label">University</span>
-                  <span class="p-value">University of Alberta</span>
-                </li>
-                <li>
-                  <span class="p-label">Major</span>
-                  <span class="p-value">BSc CS Specialization</span>
-                </li>
-                <li>
-                  <span class="p-label">GPA</span>
-                  <span class="p-value highlight-num">3.71 / 4.0</span>
-                </li>
-                <li>
-                  <span class="p-label">Primary Stack</span>
-                  <span class="p-value">C++, Python, TypeScript, Postgres</span>
-                </li>
-                <li>
-                  <span class="p-label">Main Lift</span>
-                  <span class="p-value">Barbell Compound Progression</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- GitHub Engineering & Activity Signal -->
-          <div class="bento-card bento-col-span-3 spotlight-card github-stats-card">
-            <div class="card-inner">
-              <div class="github-card-header">
-                <div class="github-header-left">
-                  <div class="github-icon-badge">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                  </div>
-                  <div>
-                    <h3 class="bento-card-title" style="margin-bottom: 0.2rem;">GitHub Codebase &amp; Repository Stats</h3>
-                    <span class="github-sub-handle">@snp05016 &bull; Public Activity &amp; Codebases</span>
-                  </div>
-                </div>
-                <a href="https://github.com/snp05016" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
-                  <span>View GitHub Profile</span>
-                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                </a>
-              </div>
-
-              <!-- 4-Stat Metric Strip -->
-              <div class="gh-metrics-row">
-                <div class="gh-metric-box">
-                  <span class="gh-metric-num">22+</span>
-                  <span class="gh-metric-label">Public Repositories</span>
-                </div>
-                <div class="gh-metric-box">
-                  <span class="gh-metric-num">8+</span>
-                  <span class="gh-metric-label">Active Languages</span>
-                </div>
-                <div class="gh-metric-box">
-                  <span class="gh-metric-num">3</span>
-                  <span class="gh-metric-label">Core Monorepos</span>
-                </div>
-                <div class="gh-metric-box">
-                  <span class="gh-metric-num">100%</span>
-                  <span class="gh-metric-label">Type-Safe &amp; CI-Guarded</span>
-                </div>
-              </div>
-
-              <!-- Featured Public Repos Grid -->
-              <div class="gh-repos-grid">
-                <a href="https://github.com/snp05016/buildSouq" class="gh-repo-card" target="_blank" rel="noopener noreferrer">
-                  <div class="gh-repo-head">
-                    <span class="gh-repo-name">buildSouq</span>
-                    <span class="gh-repo-badge">Public Monorepo</span>
-                  </div>
-                  <p class="gh-repo-desc">Enterprise B2B construction marketplace, Next.js 16, PostgreSQL 16 FORCE RLS, and zero-float BigInt arithmetic.</p>
-                  <div class="gh-repo-tags">
-                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-ts"></span>TypeScript</span>
-                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-sql"></span>PL/pgSQL</span>
-                  </div>
-                </a>
-
-                <a href="https://github.com/snp05016/nivesh" class="gh-repo-card" target="_blank" rel="noopener noreferrer">
-                  <div class="gh-repo-head">
-                    <span class="gh-repo-name">nivesh</span>
-                    <span class="gh-repo-badge">Fintech &amp; Multi-Agent</span>
-                  </div>
-                  <p class="gh-repo-desc">AI equity intelligence platform, 39 quant valuation engines, LangGraph debate council, and native SwiftUI iOS client.</p>
-                  <div class="gh-repo-tags">
-                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-py"></span>Python</span>
-                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-swift"></span>Swift</span>
-                  </div>
-                </a>
-
-                <a href="https://github.com/snp05016/psrs" class="gh-repo-card" target="_blank" rel="noopener noreferrer">
-                  <div class="gh-repo-head">
-                    <span class="gh-repo-name">psrs</span>
-                    <span class="gh-repo-badge">High-Perf Computing</span>
-                  </div>
-                  <p class="gh-repo-desc">Parallel Sorting by Regular Sampling algorithm implementation evaluating multi-threaded speedups across multicore systems.</p>
-                  <div class="gh-repo-tags">
-                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-cpp"></span>C++</span>
-                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-c"></span>POSIX C</span>
-                  </div>
-                </a>
-
-                <a href="https://github.com/snp05016/cbp2025" class="gh-repo-card" target="_blank" rel="noopener noreferrer">
-                  <div class="gh-repo-head">
-                    <span class="gh-repo-name">cbp2025</span>
-                    <span class="gh-repo-badge">Architecture Research</span>
-                  </div>
-                  <p class="gh-repo-desc">Championship Branch Prediction research benchmark evaluating branch predictor accuracy and instruction-level parallelism.</p>
-                  <div class="gh-repo-tags">
-                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-cpp"></span>C++</span>
-                    <span class="gh-lang-pill"><span class="gh-lang-dot dot-py"></span>Python</span>
-                  </div>
-                </a>
-              </div>
-
-              <div class="github-card-footer">
-                <div class="gh-stat-item">
-                  <span class="gh-stat-dot"></span>
-                  <span class="gh-stat-text">Active production codebases, compilers, research repos &amp; algorithms</span>
-                </div>
-                <a href="https://github.com/snp05016?tab=repositories" class="gh-more-link" target="_blank" rel="noopener noreferrer">
-                  <span>Explore all 22+ repos on GitHub &rarr;</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Current Focus Card -->
-          <div class="bento-card bento-col-span-3 spotlight-card focus-banner-card">
-            <div class="card-inner focus-banner-content">
-              <div class="focus-badge">Current Focus</div>
-              <p class="focus-text">
-                Lowering MLIR passes and exploring AST-level dead code elimination, building zero-float transactional workflows, and hitting regular heavy squat and deadlift sessions.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section (Awwwards-Tier Bento Showcase) -->
-    <section class="section section-dark" id="projects">
-      <div class="container">
-        <div class="section-header-flex">
-          <div class="section-eyebrow-wrap">
-            <span class="eyebrow-tag">02 / Portfolio</span>
-            <h2 class="section-heading">Featured Projects</h2>
-            <p class="section-subtext">
-              Production architectures, optimizing compilers, and quantitative intelligence tools with expandable interactive labs.
-            </p>
-          </div>
-
-          <!-- Category Filter Pills -->
-          <div class="filter-pill-group" role="tablist" aria-label="Project Focus Areas">
-            <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All Work</button>
-            <button class="filter-pill" data-filter="systems" role="tab" aria-selected="false">Systems &amp; Compilers</button>
-            <button class="filter-pill" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack &amp; Distributed</button>
-            <button class="filter-pill" data-filter="ai-tools" role="tab" aria-selected="false">AI &amp; Tooling</button>
-          </div>
-        </div>
-
-        <div class="projects-masonry" id="projects-grid">
-          
-          <!-- Project 1: BuildSouk -->
-          <article class="project-bento-card spotlight-card featured-project" data-category="fullstack">
-            <div class="project-card-top">
-              <div class="project-tag-row">
-                <span class="tech-badge badge-gold">Solo Architecture</span>
-                <span class="tech-badge badge-ghost">2026 – Present</span>
-              </div>
-              <h3 class="project-heading">BuildSouk — B2B Construction Marketplace</h3>
-              <p class="project-lead">Enterprise supply chain marketplace for UAE building materials (steel, rebar, cement, aggregates).</p>
-            </div>
-
-            <div class="project-card-mid">
-              <div class="feature-bullets">
-                <div class="bullet-row">
-                  <span class="bullet-arrow">▸</span>
-                  <span><strong>Multi-Role Security &amp; Zero-Float Math:</strong> Enforced tenant isolation via database-level <code class="mono-code">FORCE RLS</code> across a 4-role connection pool, pairing with pure <code class="mono-code">BigInt</code> micro-fils arithmetic to eliminate floating-point rounding errors on commercial contracts.</span>
-                </div>
-                <div class="bullet-row">
-                  <span class="bullet-arrow">▸</span>
-                  <span><strong>Deterministic Order FSM &amp; CI Verification:</strong> Engineered a 7-stage bilateral finite state machine protected by database triggers, backed by 229 unmocked Playwright E2E tests and automated <code class="mono-code">pg_catalog</code> schema assertion guards.</span>
-                </div>
-              </div>
-
-              <!-- Expandable Architecture Lab -->
-              <details class="deck-expander">
-                <summary class="deck-expander-toggle">
-                  <span>Explore Architecture Lab</span>
-                  <span class="expander-icon">+</span>
-                </summary>
-                
-                <div class="project-interactive-deck">
-                  <div class="deck-header">
-                    <div class="deck-title-wrap">
-                      <span class="deck-dot"></span>
-                      <span class="deck-title">Interactive Architecture Lab</span>
-                    </div>
-                    <div class="deck-nav" role="tablist">
-                      <button class="deck-tab-btn active" data-deck="buildsouk" data-tab="rls">4-Role RLS Matrix</button>
-                      <button class="deck-tab-btn" data-deck="buildsouk" data-tab="math">Zero-Float Calculator</button>
-                      <button class="deck-tab-btn" data-deck="buildsouk" data-tab="guard">CI Schema Guard Flow</button>
-                    </div>
-                  </div>
-
-                  <!-- Tab 1: 4-Role RLS -->
-                  <div class="deck-panel active" id="buildsouk-rls">
-                    <div class="deck-simulator-row">
-                      <div class="role-selector-box">
-                        <span class="sub-label">Select Database Role:</span>
-                        <div class="role-btn-group">
-                          <button class="role-chip active" data-role="app">buildsouk_app</button>
-                          <button class="role-chip" data-role="anon">buildsouk_anon</button>
-                          <button class="role-chip" data-role="system">buildsouk_system</button>
-                          <button class="role-chip" data-role="migrator">buildsouk_migrator</button>
-                        </div>
-                      </div>
-                      <div class="role-output-card" id="buildsouk-role-output">
-                        <div class="sql-preview-line">
-                          <span class="sql-keyword">SET LOCAL</span> app.current_org_id = <span class="sql-str">'org_buyer_92'</span>;
-                        </div>
-                        <ul class="permission-check-list">
-                          <li class="perm-item perm-allow"><span class="perm-icon">✓</span> <span>Read Buyer Org Orders &amp; Invoices</span></li>
-                          <li class="perm-item perm-allow"><span class="perm-icon">✓</span> <span>Query Shared LPO / GRN Contracts</span></li>
-                          <li class="perm-item perm-deny"><span class="perm-icon">✗</span> <span>Access Seller Private Margins (FORCE RLS Blocked)</span></li>
-                          <li class="perm-item perm-deny"><span class="perm-icon">✗</span> <span>Execute DDL / Drop Tables (Role Grant Blocked)</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 2: Zero-Float Math -->
-                  <div class="deck-panel" id="buildsouk-math" style="display: none;">
-                    <div class="math-calc-grid">
-                      <div class="calc-control-col">
-                        <label class="calc-label">Order Quantity (Tonnes of Rebar):</label>
-                        <input type="range" class="luxury-slider" id="rebar-tonnes-slider" min="10" max="2500" value="450" step="10">
-                        <div class="slider-val-readout"><span id="rebar-tonnes-val">450</span> Tonnes @ 2,450.75 AED/t</div>
-                      </div>
-                      <div class="calc-results-col">
-                        <div class="result-cell result-bad">
-                          <span class="cell-label">Standard IEEE 754 Float:</span>
-                          <code class="cell-code" id="float-math-preview">1102837.5000000002 AED (Rounding Noise)</code>
-                        </div>
-                        <div class="result-cell result-good">
-                          <span class="cell-label">BigInt Micro-Fils Math ($10^{-6}$ fils):</span>
-                          <code class="cell-code" id="bigint-math-preview">1,102,837.50 AED (Exact)</code>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 3: CI Schema Guard -->
-                  <div class="deck-panel" id="buildsouk-guard" style="display: none;">
-                    <div class="workflow-stepper-visual">
-                      <div class="flow-step">
-                        <div class="flow-step-badge">01</div>
-                        <div class="flow-step-title">Migration AST</div>
-                        <div class="flow-step-desc">Drizzle schema diff committed to git</div>
-                      </div>
-                      <div class="flow-arrow">→</div>
-                      <div class="flow-step">
-                        <div class="flow-step-badge">02</div>
-                        <div class="flow-step-title">pg_catalog Assert</div>
-                        <div class="flow-step-desc">Assertion check on pg_policies &amp; grants</div>
-                      </div>
-                      <div class="flow-arrow">→</div>
-                      <div class="flow-step">
-                        <div class="flow-step-badge">03</div>
-                        <div class="flow-step-title">Playwright E2E</div>
-                        <div class="flow-step-desc">229 test runners on isolated test DBs</div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </details>
-            </div>
-
-            <div class="project-card-bottom">
-              <div class="stack-badge-list">
-                <span class="stack-pill">TypeScript</span>
-                <span class="stack-pill">Next.js 16</span>
-                <span class="stack-pill">PostgreSQL 16</span>
-                <span class="stack-pill">Drizzle ORM</span>
-                <span class="stack-pill">tRPC 11</span>
-                <span class="stack-pill">Playwright</span>
-                <span class="stack-pill">Redis</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 2: Nivesh -->
-          <article class="project-bento-card spotlight-card featured-project" data-category="ai-tools fullstack">
-            <div class="project-card-top">
-              <div class="project-tag-row">
-                <span class="tech-badge badge-silver">Fintech &amp; Multi-Agent</span>
-                <span class="tech-badge badge-ghost">2026 – Present</span>
-              </div>
-              <h3 class="project-heading">Nivesh — AI Equity Intelligence Platform</h3>
-              <p class="project-lead">Full-stack quantitative research, derivatives valuation, and multi-agent equity analysis for Indian equities.</p>
-            </div>
-
-            <div class="project-card-mid">
-              <div class="feature-bullets">
-                <div class="bullet-row">
-                  <span class="bullet-arrow">▸</span>
-                  <span><strong>Quantitative Pricing &amp; Multi-Agent Consensus:</strong> Built 39 analytical valuation engines (Black-Scholes Greeks, Newton-Raphson IV, Conformal prediction) coordinated with a LangGraph 4-agent debate council.</span>
-                </div>
-                <div class="bullet-row">
-                  <span class="bullet-arrow">▸</span>
-                  <span><strong>High-Throughput Core &amp; Native iOS App:</strong> Engineered an asynchronous FastAPI backend with isolated worker execution, paired with a 77-view native SwiftUI iOS client with custom Banknote design and WidgetKit support.</span>
-                </div>
-              </div>
-
-              <!-- Expandable Architecture Lab -->
-              <details class="deck-expander">
-                <summary class="deck-expander-toggle">
-                  <span>Explore Architecture Lab</span>
-                  <span class="expander-icon">+</span>
-                </summary>
-
-                <div class="project-interactive-deck">
-                  <div class="deck-header">
-                    <div class="deck-title-wrap">
-                      <span class="deck-dot"></span>
-                      <span class="deck-title">Interactive AI &amp; Quant Lab</span>
-                    </div>
-                    <div class="deck-nav" role="tablist">
-                      <button class="deck-tab-btn active" data-deck="nivesh" data-tab="debate">Multi-Agent Debate</button>
-                      <button class="deck-tab-btn" data-deck="nivesh" data-tab="greeks">Options Greeks Engine</button>
-                      <button class="deck-tab-btn" data-deck="nivesh" data-tab="banknote">Banknote Design System</button>
-                    </div>
-                  </div>
-
-                  <!-- Tab 1: Multi-Agent Debate Simulator -->
-                  <div class="deck-panel active" id="nivesh-debate">
-                    <div class="debate-sim-container">
-                      <div class="stock-selector-row">
-                        <span class="sub-label">Select Equity Ticker:</span>
-                        <div class="ticker-btn-group">
-                          <button class="ticker-pill active" data-ticker="RELIANCE">RELIANCE.NS</button>
-                          <button class="ticker-pill" data-ticker="TCS">TCS.NS</button>
-                          <button class="ticker-pill" data-ticker="HDFCBANK">HDFCBANK.NS</button>
-                        </div>
-                      </div>
-
-                      <div class="agents-grid-preview" id="agent-personas-display">
-                        <div class="agent-persona-card">
-                          <div class="agent-role-header">
-                            <span class="agent-avatar">🛡️</span>
-                            <span class="agent-role-name">Governance Forensics</span>
-                          </div>
-                          <p class="agent-verdict-text" id="agent-gov-text">Promoter pledging 0.0%, Clean auditor report, No related-party escalation.</p>
-                        </div>
-
-                        <div class="agent-persona-card">
-                          <div class="agent-role-header">
-                            <span class="agent-avatar">📊</span>
-                            <span class="agent-role-name">Market Microstructure</span>
-                          </div>
-                          <p class="agent-verdict-text" id="agent-micro-text">Tight bid-ask spread ($0.05), institutional VWAP accumulation detected.</p>
-                        </div>
-
-                        <div class="agent-persona-card">
-                          <div class="agent-role-header">
-                            <span class="agent-avatar">📈</span>
-                            <span class="agent-role-name">Fundamentals</span>
-                          </div>
-                          <p class="agent-verdict-text" id="agent-fund-text">Piotroski F-Score: 8/9, Beneish M-Score: -2.85 (No earnings manipulation).</p>
-                        </div>
-
-                        <div class="agent-persona-card">
-                          <div class="agent-role-header">
-                            <span class="agent-avatar">📰</span>
-                            <span class="agent-role-name">News Intelligence</span>
-                          </div>
-                          <p class="agent-verdict-text" id="agent-news-text">Positive quarterly earnings call transcript sentiment (pgvector RAG score 0.89).</p>
-                        </div>
-                      </div>
-
-                      <div class="fusion-score-bar">
-                        <div class="fusion-label-group">
-                          <span class="fusion-title">Deterministic Consensus Verdict:</span>
-                          <span class="fusion-verdict" id="fusion-verdict-val">STRONG BUY (Score: 88/100)</span>
-                        </div>
-                        <div class="fusion-meter-track">
-                          <div class="fusion-meter-fill" id="fusion-meter-bar" style="width: 88%;"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 2: Black-Scholes Greeks -->
-                  <div class="deck-panel" id="nivesh-greeks" style="display: none;">
-                    <div class="greeks-sim-layout">
-                      <div class="greeks-controls">
-                        <div class="slider-unit">
-                          <div class="slider-head"><span>Spot Price ($S$):</span> <span id="spot-price-val">₹2,850</span></div>
-                          <input type="range" class="luxury-slider" id="spot-slider" min="1000" max="5000" value="2850" step="50">
-                        </div>
-                        <div class="slider-unit">
-                          <div class="slider-head"><span>Implied Volatility ($\sigma$):</span> <span id="iv-val">22%</span></div>
-                          <input type="range" class="luxury-slider" id="iv-slider" min="10" max="80" value="22" step="1">
-                        </div>
-                      </div>
-                      <div class="greeks-output-tiles">
-                        <div class="greek-tile">
-                          <span class="greek-sym">Δ (Delta)</span>
-                          <span class="greek-num" id="greek-delta">0.582</span>
-                        </div>
-                        <div class="greek-tile">
-                          <span class="greek-sym">Γ (Gamma)</span>
-                          <span class="greek-num" id="greek-gamma">0.0018</span>
-                        </div>
-                        <div class="greek-tile">
-                          <span class="greek-sym">V (Vega)</span>
-                          <span class="greek-num" id="greek-vega">4.12</span>
-                        </div>
-                        <div class="greek-tile">
-                          <span class="greek-sym">Θ (Theta)</span>
-                          <span class="greek-num" id="greek-theta">-1.84</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 3: Banknote Design System -->
-                  <div class="deck-panel" id="nivesh-banknote" style="display: none;">
-                    <div class="banknote-preview-box">
-                      <div class="banknote-header">
-                        <div class="banknote-stamp">BANKNOTE DESIGN SYSTEM</div>
-                        <div class="banknote-meta">SwiftUI &bull; 77 Views &bull; WidgetKit</div>
-                      </div>
-                      <div class="banknote-elements-list">
-                        <div class="bn-elem">
-                          <span class="bn-badge">Guilloche Ornaments</span>
-                          <span>Geometric fine-line micro-patterns rendered natively via CoreGraphics curves.</span>
-                        </div>
-                        <div class="bn-elem">
-                          <span class="bn-badge">Security Thread Motifs</span>
-                          <span>Tactile haptic feedback on trade order confirmations.</span>
-                        </div>
-                        <div class="bn-elem">
-                          <span class="bn-badge">Live WidgetKit</span>
-                          <span>Real-time NSE market ticker rendered on iOS 18 Home Screen.</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </details>
-            </div>
-
-            <div class="project-card-bottom">
-              <div class="stack-badge-list">
-                <span class="stack-pill">FastAPI</span>
-                <span class="stack-pill">Python</span>
-                <span class="stack-pill">SwiftUI</span>
-                <span class="stack-pill">PostgreSQL</span>
-                <span class="stack-pill">LangGraph</span>
-                <span class="stack-pill">Celery</span>
-                <span class="stack-pill">ChromaDB</span>
-                <span class="stack-pill">Polars</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3: Gazprea Compiler -->
-          <article class="project-bento-card spotlight-card featured-project" data-category="systems">
-            <div class="project-card-top">
-              <div class="project-tag-row">
-                <span class="tech-badge badge-gold">1st in Class Correctness</span>
-                <span class="tech-badge badge-ghost">2025 – 2026</span>
-              </div>
-              <h3 class="project-heading">Gazprea Optimizing Compiler</h3>
-              <p class="project-lead">Optimizing C++20 compiler for an imperative array/matrix language, lowering AST to MLIR and LLVM IR.</p>
-            </div>
-
-            <div class="project-card-mid">
-              <div class="feature-bullets">
-                <div class="bullet-row">
-                  <span class="bullet-arrow">▸</span>
-                  <span><strong>CRTP Static Polymorphism &amp; MLIR Pipeline:</strong> Engineered end-to-end AST lowering through ANTLR4, static polymorphic symbol resolution, semantic type checking across 7 MLIR dialects, and LLVM -O3 passes.</span>
-                </div>
-                <div class="bullet-row">
-                  <span class="bullet-arrow">▸</span>
-                  <span><strong>Control-Flow Analysis &amp; Test Suite:</strong> Built directed CFG basic blocks, reachability validation, and dead code pruning, verified by a 1,552+ test regression harness ranking 1st in class.</span>
-                </div>
-              </div>
-
-              <!-- Expandable Architecture Lab -->
-              <details class="deck-expander">
-                <summary class="deck-expander-toggle">
-                  <span>Explore Architecture Lab</span>
-                  <span class="expander-icon">+</span>
-                </summary>
-
-                <div class="project-interactive-deck">
-                  <div class="deck-header">
-                    <div class="deck-title-wrap">
-                      <span class="deck-dot"></span>
-                      <span class="deck-title">Interactive Compiler Pipeline Explorer</span>
-                    </div>
-                    <div class="deck-nav" role="tablist">
-                      <button class="deck-tab-btn active" data-deck="gazprea" data-tab="pipeline">7-Stage Lowering</button>
-                      <button class="deck-tab-btn" data-deck="gazprea" data-tab="matrix">Matrix Type Checker</button>
-                      <button class="deck-tab-btn" data-deck="gazprea" data-tab="tests">Test Suite Breakdown</button>
-                    </div>
-                  </div>
-
-                  <!-- Tab 1: 7-Stage Lowering Stepper -->
-                  <div class="deck-panel active" id="gazprea-pipeline">
-                    <div class="compiler-stepper-ui">
-                      <div class="stage-button-strip">
-                        <button class="stage-step-btn active" data-stage="0">01. Source .gaz</button>
-                        <button class="stage-step-btn" data-stage="1">02. CRTP AST</button>
-                        <button class="stage-step-btn" data-stage="2">03. MLIR Dialects</button>
-                        <button class="stage-step-btn" data-stage="3">04. LLVM -O3</button>
-                      </div>
-
-                      <div class="code-stage-viewer">
-                        <div class="viewer-header">
-                          <span class="viewer-title" id="stage-viewer-title">Stage 01 — Source Code (Matrix Multiply)</span>
-                          <span class="viewer-tag" id="stage-viewer-tag">Gazprea Language</span>
-                        </div>
-                        <pre class="stage-code-block"><code id="stage-code-content">// Gazprea Source (.gaz)
-procedure main() {
-    matrix[real, 2, 2] A = [[1.0, 2.0], [3.0, 4.0]];
-    matrix[real, 2, 2] B = [[2.0, 0.0], [1.0, 3.0]];
-    matrix[real, 2, 2] C = A ** B; // Matrix Multiplication
-    -> C;
-}</code></pre>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 2: Matrix Type Checker -->
-                  <div class="deck-panel" id="gazprea-matrix" style="display: none;">
-                    <div class="matrix-checker-preview">
-                      <div class="matrix-rule-box">
-                        <span class="rule-title">Dimension Compatibility Rule:</span>
-                        <code>matrix[T, M, K] ** matrix[T, K, N] &rarr; matrix[T, M, N]</code>
-                      </div>
-                      <div class="dimension-demo-grid">
-                        <div class="dim-card dim-valid">
-                          <span class="dim-status">✓ Valid Multiplication</span>
-                          <code>[4 x 8] ** [8 x 2] &rarr; [4 x 2]</code>
-                          <span class="dim-note">Inner dimensions match (K = 8). Scalar promotions applied.</span>
-                        </div>
-                        <div class="dim-card dim-invalid">
-                          <span class="dim-status">✗ Static Type Error</span>
-                          <code>[4 x 6] ** [8 x 2] &rarr; ERROR</code>
-                          <span class="dim-note">Dimension mismatch: 6 != 8. Compile-time diagnostic emitted.</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Tab 3: Test Suite Breakdown -->
-                  <div class="deck-panel" id="gazprea-tests" style="display: none;">
-                    <div class="test-matrix-breakdown">
-                      <div class="test-category-row">
-                        <div class="cat-name">Syntax &amp; Scoping</div>
-                        <div class="cat-bar-wrap"><div class="cat-bar" style="width: 100%;"></div></div>
-                        <div class="cat-count">240 / 240 Passed</div>
-                      </div>
-                      <div class="test-category-row">
-                        <div class="cat-name">Type Checking (2,955 LoC)</div>
-                        <div class="cat-bar-wrap"><div class="cat-bar" style="width: 100%;"></div></div>
-                        <div class="cat-count">512 / 512 Passed</div>
-                      </div>
-                      <div class="test-category-row">
-                        <div class="cat-name">CFG &amp; Dead Code Elimination</div>
-                        <div class="cat-bar-wrap"><div class="cat-bar" style="width: 100%;"></div></div>
-                        <div class="cat-count">320 / 320 Passed</div>
-                      </div>
-                      <div class="test-category-row">
-                        <div class="cat-name">End-to-End Execution (LLVM)</div>
-                        <div class="cat-bar-wrap"><div class="cat-bar" style="width: 100%;"></div></div>
-                        <div class="cat-count">480 / 480 Passed</div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </details>
-            </div>
-
-            <div class="project-card-bottom">
-              <div class="stack-badge-list">
-                <span class="stack-pill">C++20</span>
-                <span class="stack-pill">LLVM</span>
-                <span class="stack-pill">MLIR</span>
-                <span class="stack-pill">ANTLR4</span>
-                <span class="stack-pill">CMake</span>
-                <span class="stack-pill">Static Analysis</span>
-                <span class="stack-pill">GDB</span>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section (Timeline Grid) -->
+    <!-- Experience Timeline -->
     <section class="section" id="experience">
-      <div class="container">
-        <div class="section-eyebrow-wrap">
-          <span class="eyebrow-tag">03 / Experience</span>
-          <h2 class="section-heading">Work, Research &amp; Teaching</h2>
+      <div class="section-heading-row">
+        <h2 class="section-title">Experience</h2>
+        <span class="section-sub">Industry, Teaching &amp; Research</span>
+      </div>
+
+      <div class="timeline-stack">
+
+        <div class="timeline-entry">
+          <div class="entry-header">
+            <div>
+              <h3 class="entry-title">Software Engineer</h3>
+              <div class="entry-org">BuildSouk (B2B E-Commerce Marketplace)</div>
+            </div>
+            <div class="entry-meta">
+              <span class="entry-date">Aug 2026 – Present</span>
+              <span class="entry-loc">Dubai, UAE</span>
+            </div>
+          </div>
+          <p class="entry-desc">
+            Architected an enterprise B2B marketplace backend from scratch in TypeScript, Next.js, and PostgreSQL 16. Enforced multi-tenant security via a 4-role connection pool and database-level <code class="code-inline">FORCE RLS</code> policies. Built a zero-float <code class="code-inline">BigInt</code> financial engine, authored schema assertions against <code class="code-inline">pg_catalog</code>, and wrote 229 unmocked Playwright E2E test suites in CI/CD.
+          </p>
         </div>
 
-        <div class="experience-timeline">
-          
-          <!-- Experience 1 -->
-          <div class="timeline-row">
-            <div class="timeline-time-col">
-              <span class="timeline-date-pill">Aug 2026 – Present</span>
-              <span class="timeline-location">Dubai, UAE</span>
+        <div class="timeline-entry">
+          <div class="entry-header">
+            <div>
+              <h3 class="entry-title">Teaching Assistant (CMPUT 201 &amp; CMPUT 229)</h3>
+              <div class="entry-org">University of Alberta</div>
             </div>
-            <div class="timeline-dot-col">
-              <div class="timeline-glow-dot"></div>
-              <div class="timeline-line"></div>
-            </div>
-            <div class="timeline-card-col spotlight-card">
-              <div class="experience-card-header">
-                <div>
-                  <h3 class="exp-role">Software Engineer</h3>
-                  <h4 class="exp-company">BuildSouk (B2B E-Commerce Marketplace)</h4>
-                </div>
-              </div>
-              <p class="exp-text">
-                Architected an enterprise B2B marketplace backend from scratch in TypeScript, Next.js, and PostgreSQL 16. Enforced multi-tenant security via a 4-role connection pool and database-level <code class="mono-code">FORCE RLS</code> policies. Built a zero-float <code class="mono-code">BigInt</code> financial engine, authored schema assertions against <code class="mono-code">pg_catalog</code>, and wrote 229 unmocked Playwright E2E test suites in CI/CD.
-              </p>
-              <div class="exp-tag-list">
-                <span class="stack-pill">TypeScript</span>
-                <span class="stack-pill">Next.js 16</span>
-                <span class="stack-pill">PostgreSQL 16</span>
-                <span class="stack-pill">Drizzle ORM</span>
-                <span class="stack-pill">Playwright</span>
-                <span class="stack-pill">Redis</span>
-              </div>
+            <div class="entry-meta">
+              <span class="entry-date">Sep 2025 – Dec 2025</span>
+              <span class="entry-loc">Edmonton, AB</span>
             </div>
           </div>
+          <p class="entry-desc">
+            Mentored over 150 undergraduate students across Practical Programming Methodology (C programming, pointers, memory safety, GDB debugging, Makefiles) and Computer Organization &amp; Architecture (RISC-V assembly). Authored the reference 5-stage RISC-V pipelined CPU simulator in 1,800+ lines of assembly with hazard detection, data forwarding, and cache miss modeling.
+          </p>
+        </div>
 
-          <!-- Experience 2 -->
-          <div class="timeline-row">
-            <div class="timeline-time-col">
-              <span class="timeline-date-pill">Sep 2025 – Dec 2025</span>
-              <span class="timeline-location">Edmonton, AB</span>
+        <div class="timeline-entry">
+          <div class="entry-header">
+            <div>
+              <h3 class="entry-title">Research Assistant</h3>
+              <div class="entry-org">Compiler Design and Optimization Lab</div>
             </div>
-            <div class="timeline-dot-col">
-              <div class="timeline-glow-dot"></div>
-              <div class="timeline-line"></div>
-            </div>
-            <div class="timeline-card-col spotlight-card">
-              <div class="experience-card-header">
-                <div>
-                  <h3 class="exp-role">Teaching Assistant (CMPUT 201 &amp; CMPUT 229)</h3>
-                  <h4 class="exp-company">University of Alberta</h4>
-                </div>
-              </div>
-              <p class="exp-text">
-                Mentored over 150 undergraduate students across Practical Programming Methodology (C programming, pointers, memory safety, GDB debugging, Makefiles) and Computer Organization &amp; Architecture (RISC-V assembly). Authored the reference 5-stage RISC-V pipelined CPU simulator in 1,800+ lines of assembly with hazard detection, data forwarding, and cache miss modeling.
-              </p>
-              <div class="exp-tag-list">
-                <span class="stack-pill">C Programming</span>
-                <span class="stack-pill">RISC-V Assembly</span>
-                <span class="stack-pill">GDB</span>
-                <span class="stack-pill">Valgrind</span>
-                <span class="stack-pill">Pipelining</span>
-                <span class="stack-pill">Mentoring</span>
-              </div>
+            <div class="entry-meta">
+              <span class="entry-date">May 2025 – Sep 2025</span>
+              <span class="entry-loc">Edmonton, AB</span>
             </div>
           </div>
+          <p class="entry-desc">
+            Conducted research on compiler optimization and pipelined RISC-V architecture under Prof. J. Nelson Amaral. Developed automated validation harnesses to benchmark runtime efficiency, register allocation, and binary execution patterns.
+          </p>
+        </div>
 
-          <!-- Experience 3 -->
-          <div class="timeline-row">
-            <div class="timeline-time-col">
-              <span class="timeline-date-pill">May 2025 – Sep 2025</span>
-              <span class="timeline-location">Edmonton, AB</span>
+        <div class="timeline-entry">
+          <div class="entry-header">
+            <div>
+              <h3 class="entry-title">Software Development Intern</h3>
+              <div class="entry-org">CubeZix Technologies</div>
             </div>
-            <div class="timeline-dot-col">
-              <div class="timeline-glow-dot"></div>
-              <div class="timeline-line"></div>
-            </div>
-            <div class="timeline-card-col spotlight-card">
-              <div class="experience-card-header">
-                <div>
-                  <h3 class="exp-role">Research Assistant</h3>
-                  <h4 class="exp-company">Compiler Design and Optimization Lab</h4>
-                </div>
-              </div>
-              <p class="exp-text">
-                Conducted research on compiler optimization and pipelined RISC-V architecture under Prof. J. Nelson Amaral. Developed automated validation harnesses to benchmark runtime efficiency, register allocation, and binary execution patterns.
-              </p>
-              <div class="exp-tag-list">
-                <span class="stack-pill">Compilers</span>
-                <span class="stack-pill">RISC-V</span>
-                <span class="stack-pill">Benchmarking</span>
-                <span class="stack-pill">Architecture Research</span>
-              </div>
+            <div class="entry-meta">
+              <span class="entry-date">Jun 2024 – Aug 2024</span>
+              <span class="entry-loc">Dubai, UAE</span>
             </div>
           </div>
+          <p class="entry-desc">
+            Built automated CI/CD and deployment pipelines on Microsoft Azure with third-party REST API integrations. Customised ERP modules using Frappe Framework in Python and JavaScript, reducing manual data processing turnaround by 30%.
+          </p>
+        </div>
 
-          <!-- Experience 4 -->
-          <div class="timeline-row">
-            <div class="timeline-time-col">
-              <span class="timeline-date-pill">Jun 2024 – Aug 2024</span>
-              <span class="timeline-location">Dubai, UAE</span>
-            </div>
-            <div class="timeline-dot-col">
-              <div class="timeline-glow-dot"></div>
-            </div>
-            <div class="timeline-card-col spotlight-card">
-              <div class="experience-card-header">
-                <div>
-                  <h3 class="exp-role">Software Development Intern</h3>
-                  <h4 class="exp-company">CubeZix Technologies</h4>
-                </div>
-              </div>
-              <p class="exp-text">
-                Built automated CI/CD and deployment pipelines on Microsoft Azure with third-party REST API integrations. Customised ERP modules using Frappe Framework in Python and JavaScript, reducing manual data processing turnaround by 30%.
-              </p>
-              <div class="exp-tag-list">
-                <span class="stack-pill">Python</span>
-                <span class="stack-pill">JavaScript</span>
-                <span class="stack-pill">Microsoft Azure</span>
-                <span class="stack-pill">Frappe ERP</span>
-                <span class="stack-pill">CI/CD</span>
-              </div>
-            </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="section-heading-row">
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="education-block">
+        <div class="entry-header">
+          <div>
+            <h3 class="entry-title">University of Alberta</h3>
+            <div class="entry-org">Bachelor of Science in Computing Science (Specialization)</div>
           </div>
+          <div class="entry-meta">
+            <span class="entry-date">Expected May 2028</span>
+            <span class="entry-loc">GPA: 3.71 / 4.0</span>
+          </div>
+        </div>
+        <p class="coursework-text">
+          <strong>Relevant Coursework:</strong> Compiler Design, Computer Architecture, Operating System Concepts, Algorithms &amp; Data Structures, Database Management Systems, Parallel &amp; Distributed Systems, Software Engineering, Machine Learning.
+        </p>
+      </div>
+    </section>
 
+    <hr class="divider">
+
+    <!-- Technical Skills -->
+    <section class="section" id="skills">
+      <div class="section-heading-row">
+        <h2 class="section-title">Technical Arsenal</h2>
+      </div>
+
+      <div class="skills-table">
+        <div class="skill-row">
+          <div class="skill-heading">Languages</div>
+          <div class="skill-body">C++, Python (AsyncIO), TypeScript, C, SQL (PostgreSQL, MySQL), Swift, RISC-V Assembly, Bash, Java</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-heading">Systems &amp; Compilers</div>
+          <div class="skill-body">LLVM, MLIR (7 Dialects), ANTLR4, CMake, GDB, Valgrind, POSIX Threads (pthreads), CFG Reachability, Static Analysis</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-heading">Backend &amp; Infra</div>
+          <div class="skill-body">FastAPI, PostgreSQL 16 (FORCE RLS), Redis, Celery, Drizzle ORM, SQLAlchemy, Docker, Microsoft Azure, tRPC</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-heading">Frontend &amp; Mobile</div>
+          <div class="skill-body">Next.js 16 (App Router), React 19, SwiftUI, WidgetKit, Tailwind CSS, Expo</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-heading">Testing &amp; CI/CD</div>
+          <div class="skill-body">Playwright (229+ unmocked tests), pytest, Vitest, Fast-Check, pg_catalog Schema Guards, GitHub Actions CI/CD</div>
         </div>
       </div>
     </section>
 
-    <!-- Technical Arsenal / Skills Section (Bento Grid) -->
-    <section class="section section-dark" id="skills">
-      <div class="container">
-        <div class="section-eyebrow-wrap">
-          <span class="eyebrow-tag">04 / Skills</span>
-          <h2 class="section-heading">Technical Arsenal</h2>
-          <p class="section-subtext">Categorized tools and technologies I use across systems, compilers, and production full-stack engineering.</p>
+    <hr class="divider">
+
+    <!-- Other Repositories -->
+    <section class="section" id="repositories">
+      <div class="section-heading-row">
+        <h2 class="section-title">Other Codebases &amp; Repositories</h2>
+        <a href="https://github.com/snp05016?tab=repositories" class="link-inline" target="_blank" rel="noopener noreferrer">All 22+ on GitHub ↗</a>
+      </div>
+
+      <div class="repos-stack">
+        <div class="repo-entry">
+          <div class="repo-title-row">
+            <a href="https://github.com/snp05016/psrs" class="repo-name" target="_blank" rel="noopener noreferrer">psrs ↗</a>
+            <span class="repo-lang-tag">C++ / POSIX C</span>
+          </div>
+          <p class="repo-summary">Parallel Sorting by Regular Sampling algorithm implementation evaluating multi-threaded speedups across multicore systems.</p>
         </div>
 
-        <div class="skills-bento-grid">
-          
-          <div class="skill-card spotlight-card">
-            <div class="skill-card-top">
-              <span class="skill-icon">💻</span>
-              <h3 class="skill-card-title">Languages</h3>
-            </div>
-            <div class="skill-chip-wrap">
-              <span class="skill-chip">C++ (C++17/20)</span>
-              <span class="skill-chip">C</span>
-              <span class="skill-chip">Python (AsyncIO)</span>
-              <span class="skill-chip">TypeScript</span>
-              <span class="skill-chip">JavaScript</span>
-              <span class="skill-chip">SQL (PostgreSQL, MySQL)</span>
-              <span class="skill-chip">Swift</span>
-              <span class="skill-chip">RISC-V Assembly</span>
-              <span class="skill-chip">Bash</span>
-              <span class="skill-chip">Java</span>
-            </div>
+        <div class="repo-entry">
+          <div class="repo-title-row">
+            <a href="https://github.com/snp05016/cbp2025" class="repo-name" target="_blank" rel="noopener noreferrer">cbp2025 ↗</a>
+            <span class="repo-lang-tag">C++ / Python</span>
           </div>
+          <p class="repo-summary">Championship Branch Prediction research benchmark evaluating branch predictor accuracy and instruction-level parallelism.</p>
+        </div>
 
-          <div class="skill-card spotlight-card">
-            <div class="skill-card-top">
-              <span class="skill-icon">⚙️</span>
-              <h3 class="skill-card-title">Systems &amp; Compilers</h3>
-            </div>
-            <div class="skill-chip-wrap">
-              <span class="skill-chip">LLVM</span>
-              <span class="skill-chip">MLIR Dialects</span>
-              <span class="skill-chip">ANTLR4</span>
-              <span class="skill-chip">CMake</span>
-              <span class="skill-chip">GDB &amp; Valgrind</span>
-              <span class="skill-chip">POSIX Threads (pthreads)</span>
-              <span class="skill-chip">Static Analysis &amp; CFG</span>
-              <span class="skill-chip">Type Systems</span>
-              <span class="skill-chip">gem5 Simulator</span>
-            </div>
+        <div class="repo-entry">
+          <div class="repo-title-row">
+            <a href="https://github.com/snp05016/neetcode-submissions" class="repo-name" target="_blank" rel="noopener noreferrer">neetcode-submissions ↗</a>
+            <span class="repo-lang-tag">C++ / Python</span>
           </div>
-
-          <div class="skill-card spotlight-card">
-            <div class="skill-card-top">
-              <span class="skill-icon">🗄️</span>
-              <h3 class="skill-card-title">Backend &amp; Infrastructure</h3>
-            </div>
-            <div class="skill-chip-wrap">
-              <span class="skill-chip">FastAPI</span>
-              <span class="skill-chip">PostgreSQL 16 &amp; FORCE RLS</span>
-              <span class="skill-chip">Redis</span>
-              <span class="skill-chip">Celery Task Queues</span>
-              <span class="skill-chip">Drizzle ORM &amp; SQLAlchemy</span>
-              <span class="skill-chip">Docker</span>
-              <span class="skill-chip">Microsoft Azure</span>
-              <span class="skill-chip">tRPC</span>
-              <span class="skill-chip">Linux/UNIX Internals</span>
-            </div>
-          </div>
-
-          <div class="skill-card spotlight-card">
-            <div class="skill-card-top">
-              <span class="skill-icon">📱</span>
-              <h3 class="skill-card-title">Frontend &amp; Mobile</h3>
-            </div>
-            <div class="skill-chip-wrap">
-              <span class="skill-chip">Next.js 16 (App Router)</span>
-              <span class="skill-chip">React 19</span>
-              <span class="skill-chip">SwiftUI</span>
-              <span class="skill-chip">WidgetKit</span>
-              <span class="skill-chip">Tailwind CSS</span>
-              <span class="skill-chip">Expo (React Native)</span>
-              <span class="skill-chip">Responsive UI</span>
-              <span class="skill-chip">Electron</span>
-            </div>
-          </div>
-
-          <div class="skill-card spotlight-card">
-            <div class="skill-card-top">
-              <span class="skill-icon">🧪</span>
-              <h3 class="skill-card-title">Testing &amp; Quality</h3>
-            </div>
-            <div class="skill-chip-wrap">
-              <span class="skill-chip">Playwright E2E</span>
-              <span class="skill-chip">pytest</span>
-              <span class="skill-chip">Vitest</span>
-              <span class="skill-chip">Fast-Check (Fuzzing)</span>
-              <span class="skill-chip">XCTest (iOS)</span>
-              <span class="skill-chip">pg_catalog Schema Guards</span>
-              <span class="skill-chip">CI/CD GitHub Actions</span>
-            </div>
-          </div>
-
-          <div class="skill-card spotlight-card">
-            <div class="skill-card-top">
-              <span class="skill-icon">🧠</span>
-              <h3 class="skill-card-title">AI &amp; Quantitative Labs</h3>
-            </div>
-            <div class="skill-chip-wrap">
-              <span class="skill-chip">LangGraph Multi-Agent</span>
-              <span class="skill-chip">ChromaDB &amp; pgvector</span>
-              <span class="skill-chip">Black-Scholes &amp; Greeks</span>
-              <span class="skill-chip">Conformal Prediction</span>
-              <span class="skill-chip">LightGBM &amp; Polars</span>
-              <span class="skill-chip">Prompt Caching &amp; Token ROI</span>
-            </div>
-          </div>
-
+          <p class="repo-summary">Algorithmic solutions, data structure benchmarks, and problem decompositions.</p>
         </div>
       </div>
     </section>
 
-    <!-- Off the Clock (Authentic Personality) -->
+    <hr class="divider">
+
+    <!-- Off the Clock -->
     <section class="section" id="off-the-clock">
-      <div class="container">
-        <div class="section-eyebrow-wrap">
-          <span class="eyebrow-tag">05 / Beyond the Code</span>
-          <h2 class="section-heading">Off the clock.</h2>
-          <p class="section-subtext">Outside the editor: lifting heavy, playing chess badly under time pressure, and overthinking reality TV.</p>
+      <div class="section-heading-row">
+        <h2 class="section-title">Off the Clock</h2>
+        <span class="section-sub">Outside the editor</span>
+      </div>
+
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <h3 class="hobby-title">Barbell Training</h3>
+          <p class="hobby-desc">Lifting is what keeps me sane outside of work. Squats, deadlifts, bench, overhead press, heavy, weight going up every few weeks.</p>
+          <p class="hobby-quote">You make the lift or you don't. No spin, no partial credit.</p>
         </div>
 
-        <div class="hobbies-bento-grid">
-          
-          <!-- Card 1: Gym Training -->
-          <div class="hobby-bento-card spotlight-card">
-            <div class="hobby-icon-box">🏋️‍♂️</div>
-            <h3 class="hobby-card-title">Barbell Training</h3>
-            <p class="hobby-text">
-              Lifting is what keeps me sane outside of work. Squats, deadlifts, bench, overhead press, heavy, weight going up every few weeks.
-            </p>
-            <p class="hobby-subquote">You make the lift or you don't. No spin, no partial credit.</p>
-            <div class="hobby-tag-row">
-              <span class="hobby-badge">Progression</span>
-              <span class="hobby-badge">Compound Lifts</span>
-              <span class="hobby-badge">Discipline</span>
-            </div>
-          </div>
-
-          <!-- Card 2: Chess & Tactical Play -->
-          <div class="hobby-bento-card spotlight-card">
-            <div class="hobby-icon-box">♟️</div>
-            <h3 class="hobby-card-title">Chess &amp; Tactics</h3>
-            <p class="hobby-text">
-              I play a lot of rapid and blitz. The clock is the whole point, spotting the right move before you run out of time to find it.
-            </p>
-            <p class="hobby-subquote">Kind of like debugging a race condition. One bad move and you're punished instantly.</p>
-            <div class="hobby-tag-row">
-              <span class="hobby-badge">Rapid &amp; Blitz</span>
-              <span class="hobby-badge">Clock Pressure</span>
-              <span class="hobby-badge">Tactics</span>
-            </div>
-          </div>
-
-          <!-- Card 3: Reality TV Strategy -->
-          <div class="hobby-bento-card spotlight-card">
-            <div class="hobby-icon-box">📺</div>
-            <h3 class="hobby-card-title">Reality TV Strategy</h3>
-            <p class="hobby-text">
-              I watch Survivor, Big Brother, and MasterChef like other people watch sports, as live game theory. Voting blocs, idol timing, veto leverage, it's all incomplete information until you start tracking it that way.
-            </p>
-            <div class="hobby-tag-row">
-              <span class="hobby-badge">Survivor</span>
-              <span class="hobby-badge">Big Brother</span>
-              <span class="hobby-badge">Game Theory</span>
-            </div>
-          </div>
-
-          <!-- Card 4: Shows & Chill Vibe -->
-          <div class="hobby-bento-card spotlight-card">
-            <div class="hobby-icon-box">🍿</div>
-            <h3 class="hobby-card-title">Shows &amp; Chill Vibe</h3>
-            <p class="hobby-text">
-              Brooklyn Nine-Nine or The Office when I actually want to switch off. Otherwise: sleep, eat properly, build on my own clock.
-            </p>
-            <div class="hobby-tag-row">
-              <span class="hobby-badge">Brooklyn 99</span>
-              <span class="hobby-badge">The Office</span>
-              <span class="hobby-badge">Chill Vibe</span>
-            </div>
-          </div>
-
+        <div class="hobby-card">
+          <h3 class="hobby-title">Chess &amp; Tactics</h3>
+          <p class="hobby-desc">I play a lot of rapid and blitz. The clock is the whole point, spotting the right move before you run out of time to find it.</p>
+          <p class="hobby-quote">Kind of like debugging a race condition. One bad move and you're punished instantly.</p>
         </div>
 
+        <div class="hobby-card">
+          <h3 class="hobby-title">Reality TV Strategy</h3>
+          <p class="hobby-desc">I watch Survivor, Big Brother, and MasterChef like other people watch sports, as live game theory. Voting blocs, idol timing, veto leverage, it's all incomplete information until you start tracking it that way.</p>
+        </div>
+
+        <div class="hobby-card">
+          <h3 class="hobby-title">Shows &amp; Chill Vibe</h3>
+          <p class="hobby-desc">Brooklyn Nine-Nine or The Office when I actually want to switch off. Otherwise: sleep, eat properly, build on my own clock.</p>
+        </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section section-dark" id="contact">
-      <div class="container">
-        <div class="contact-card-grand spotlight-card">
-          <div class="contact-inner-content">
-            <span class="eyebrow-tag">06 / Connect</span>
-            <h2 class="contact-grand-title">Let's talk systems, code, or strategy.</h2>
-            <p class="contact-lead">
-              I'm open for Software Engineering Co-op and Full-Time roles. Drop me a line directly:
-            </p>
+    <hr class="divider">
 
-            <div class="contact-links-grid">
-              
-              <!-- Primary Email (Personal) -->
-              <div class="contact-pill-item">
-                <div class="c-icon">✉️</div>
-                <div class="c-details">
-                  <span class="c-type">Personal Email (Primary)</span>
-                  <a href="mailto:snp050106@gmail.com" class="c-link" id="email-primary">snp050106@gmail.com</a>
-                </div>
-                <button class="btn btn-sm btn-secondary copy-btn" data-copy="snp050106@gmail.com" aria-label="Copy personal email">
-                  <span class="copy-label">Copy</span>
-                </button>
-              </div>
+    <!-- Contact & Footer -->
+    <footer class="site-footer" id="contact">
+      <div class="section-heading-row">
+        <h2 class="section-title">Get in Touch</h2>
+      </div>
+      <p class="footer-desc">
+        Open to Software Engineering Co-op and Full-Time roles. Drop me a line directly:
+      </p>
 
-              <!-- Academic Email -->
-              <div class="contact-pill-item">
-                <div class="c-icon">🎓</div>
-                <div class="c-details">
-                  <span class="c-type">Academic Email (UAlberta)</span>
-                  <a href="mailto:snp2@ualberta.ca" class="c-link">snp2@ualberta.ca</a>
-                </div>
-                <button class="btn btn-sm btn-secondary copy-btn" data-copy="snp2@ualberta.ca" aria-label="Copy academic email">
-                  <span class="copy-label">Copy</span>
-                </button>
-              </div>
-
-              <!-- GitHub Link -->
-              <div class="contact-pill-item">
-                <div class="c-icon">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                </div>
-                <div class="c-details">
-                  <span class="c-type">GitHub</span>
-                  <a href="https://github.com/snp05016" class="c-link" target="_blank" rel="noopener noreferrer">github.com/snp05016</a>
-                </div>
-                <a href="https://github.com/snp05016" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">Visit</a>
-              </div>
-
-              <!-- LinkedIn Link -->
-              <div class="contact-pill-item">
-                <div class="c-icon">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
-                </div>
-                <div class="c-details">
-                  <span class="c-type">LinkedIn</span>
-                  <a href="https://www.linkedin.com/in/saumya-patel32/" class="c-link" target="_blank" rel="noopener noreferrer">linkedin.com/in/saumya-patel32</a>
-                </div>
-                <a href="https://www.linkedin.com/in/saumya-patel32/" class="btn btn-sm btn-secondary" target="_blank" rel="noopener noreferrer">Connect</a>
-              </div>
-
-            </div>
-
-            <div class="contact-bottom-tagline">
-              <span>📍 Edmonton, AB &bull; Open for relocation &amp; remote roles</span>
-            </div>
-          </div>
+      <div class="contact-links-stack">
+        <div class="contact-link-row">
+          <span class="c-label">Personal Email:</span>
+          <button class="copy-email-btn" data-email="snp050106@gmail.com" aria-label="Copy personal email">
+            <span class="email-text">snp050106@gmail.com</span>
+            <span class="copy-badge">Copy</span>
+          </button>
+        </div>
+        <div class="contact-link-row">
+          <span class="c-label">Academic Email:</span>
+          <a href="mailto:snp2@ualberta.ca" class="link-inline">snp2@ualberta.ca</a>
+        </div>
+        <div class="contact-link-row">
+          <span class="c-label">GitHub:</span>
+          <a href="https://github.com/snp05016" class="link-inline" target="_blank" rel="noopener noreferrer">github.com/snp05016 ↗</a>
+        </div>
+        <div class="contact-link-row">
+          <span class="c-label">LinkedIn:</span>
+          <a href="https://www.linkedin.com/in/saumya-patel32/" class="link-inline" target="_blank" rel="noopener noreferrer">linkedin.com/in/saumya-patel32 ↗</a>
         </div>
       </div>
-    </section>
+
+      <div class="copyright-row">
+        <span>&copy; 2026 Saumya Patel &bull; Handcrafted in pure HTML &amp; CSS &bull; Zero dependencies</span>
+      </div>
+    </footer>
 
   </main>
 
-  <!-- Modern Editorial Footer -->
-  <footer class="site-footer">
-    <div class="container footer-flex">
-      <div class="footer-brand-side">
-        <div class="footer-logo">
-          <span class="logo-bracket">[</span><span class="logo-letters">sp</span><span class="logo-bracket">]</span>
-          <span class="footer-name">Saumya Patel</span>
-        </div>
-        <p class="footer-note">Handcrafted with vanilla HTML, CSS, and JavaScript. Zero dependencies, zero build step.</p>
-      </div>
-
-      <div class="footer-action-side">
-        <a href="#top" class="back-to-top-btn" id="back-to-top-btn" aria-label="Back to top of page">
-          <span>Back to Top</span>
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Toast Notification Container -->
-  <div class="toast-stack" id="toast-stack" aria-live="polite" aria-atomic="true"></div>
+  <!-- Tiny Minimalist Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite">Copied to clipboard</div>
 
   <script src="script.js"></script>
 </body>
