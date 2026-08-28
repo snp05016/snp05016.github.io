@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Saumya Patel — Aesthetic Minimalist Monochrome Design System
+   Saumya Patel | Aesthetic Minimalist Monochrome Design System
    Pure Black & White, High-Legibility Editorial Typography, Zero Slop
    ========================================================================== */
 
@@ -557,7 +557,7 @@ a:hover {
 }
 
 .entry-bullet-list li::before {
-  content: "—";
+  content: "•";
   position: absolute;
   left: 0;
   color: var(--text-tertiary);

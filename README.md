@@ -1,4 +1,4 @@
-# Saumya Patel — Personal Portfolio
+# Saumya Patel | Personal Portfolio
 
 Live at **[snp05016.github.io](https://snp05016.github.io)**
 

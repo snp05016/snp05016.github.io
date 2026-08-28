@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saumya Patel — Software Engineer &amp; Systems Builder</title>
+  <title>Saumya Patel | Software Engineer &amp; Systems Builder</title>
   <meta name="description" content="Personal portfolio and engineering case studies of Saumya Patel. Computing Science student at the University of Alberta building optimizing compilers, distributed systems, and quantitative platforms.">
 
   <!-- OpenGraph -->
-  <meta property="og:title" content="Saumya Patel — Software Engineer">
+  <meta property="og:title" content="Saumya Patel | Software Engineer">
   <meta property="og:description" content="Compilers, distributed systems, and quantitative platforms. CS at UAlberta.">
   <meta property="og:type" content="website">
 
@@ -22,11 +22,11 @@
 
   <main class="page-wrapper">
 
-    <!-- Header & Hero Section with Photo -->
+    <!-- Header & Hero Section with Portrait -->
     <header class="site-header">
       <div class="hero-profile-row">
         
-        <!-- Authentic Portrait Photo -->
+        <!-- Portrait Photo -->
         <div class="profile-photo-wrap">
           <img src="saumya.jpg" alt="Saumya Patel" class="profile-photo" width="140" height="175">
         </div>
@@ -65,7 +65,7 @@
 
     <hr class="divider">
 
-    <!-- Key Metrics Ticker -->
+    <!-- Key Verified Numbers -->
     <section class="section metrics-strip" aria-label="Key Verified Metrics">
       <div class="metric-item">
         <div class="metric-num">3.71</div>
@@ -87,7 +87,7 @@
 
     <hr class="divider">
 
-    <!-- Featured Projects (Comprehensive Case Studies) -->
+    <!-- Featured Projects (Humanized Case Studies) -->
     <section class="section" id="projects">
       <div class="section-heading-row">
         <h2 class="section-title">Featured Projects &amp; Architecture Case Studies</h2>
@@ -113,7 +113,7 @@
           </div>
 
           <p class="project-narrative">
-            Enterprise supply chain marketplace built specifically for the UAE construction and building material industry (cement, rebar, structural steel, aggregates, blocks, MEP). Single-handedly engineered the entire platform from founder specifications to an enterprise-grade production monorepo—spanning web, native mobile, tRPC microservices, PostgreSQL kernel security, and automated CI test runners.
+            I built an enterprise marketplace for UAE construction procurement (cement, rebar, steel, aggregates, MEP). Took it from founder requirements to a production monorepo, covering the web client, native mobile app, tRPC pipelines, PostgreSQL kernel security, and automated test harnesses.
           </p>
 
           <div class="case-study-pillars">
@@ -121,28 +121,28 @@
             <div class="pillar-block">
               <h4 class="pillar-title">PostgreSQL 16 Multi-Role Kernel Security &amp; FORCE RLS</h4>
               <p class="pillar-text">
-                Enforced multi-tenant isolation at the database kernel level across a 4-role connection pool (<code class="code-inline">buildsouk_app</code>, <code class="code-inline">buildsouk_anon</code>, <code class="code-inline">buildsouk_system</code>, <code class="code-inline">buildsouk_migrator</code>). Every query runs within explicit transactions setting session variables (<code class="code-inline">SET LOCAL app.current_org_id</code>). Modeled commercial orders as bilateral contracts co-owned by buyer and seller organizations—enabling simultaneous querying of shared contract records while strictly isolating private financial margins and cost structures.
+                Enforced multi-tenant isolation directly in PostgreSQL across 4 roles (<code class="code-inline">buildsouk_app</code>, <code class="code-inline">buildsouk_anon</code>, <code class="code-inline">buildsouk_system</code>, <code class="code-inline">buildsouk_migrator</code>). Queries execute inside transactions setting <code class="code-inline">SET LOCAL app.current_org_id</code>. Orders are bilateral contracts co-owned by buyer and seller organizations. Both parties read shared contract records, but private profit margins and supplier cost data remain completely isolated.
               </p>
             </div>
 
             <div class="pillar-block">
               <h4 class="pillar-title">Zero-Float Financial Math Engine ($10^{-6}$ Micro-Fils)</h4>
               <p class="pillar-text">
-                Completely eliminated IEEE 754 floating-point rounding errors on multi-million dirham corporate transactions by authoring a pure <code class="code-inline">BigInt</code> integer arithmetic engine scaled to micro-fils. Enforced pre-commit AST guards that mechanically block <code class="code-inline">parseFloat()</code> and <code class="code-inline">Number()</code> across all monetary calculation files.
+                Eliminated floating-point rounding errors on multi-million dirham contracts by writing integer math in <code class="code-inline">BigInt</code> micro-fils. Pre-commit hooks run AST checks to mechanically block <code class="code-inline">parseFloat()</code> and <code class="code-inline">Number()</code> in financial files.
               </p>
             </div>
 
             <div class="pillar-block">
-              <h4 class="pillar-title">Deterministic Order FSM &amp; Contract Lifecycle</h4>
+              <h4 class="pillar-title">Deterministic Order State Machine &amp; Contract Lifecycle</h4>
               <p class="pillar-text">
-                Engineered a 7-stage bilateral finite state machine (<code class="code-inline">PLACED</code> &rarr; <code class="code-inline">CONFIRMED</code> &rarr; <code class="code-inline">IN_FULFILMENT</code> &rarr; <code class="code-inline">DELIVERED</code> &rarr; <code class="code-inline">CLOSED</code>) protected against illegal terminal transitions by PostgreSQL database triggers. Built an append-only Local Purchase Order (LPO) and Goods Received Note (GRN) reconciliation engine with partial delivery acceptance and granular damage dispute workflows.
+                Built a 7-stage bilateral finite state machine (<code class="code-inline">PLACED</code> &rarr; <code class="code-inline">CONFIRMED</code> &rarr; <code class="code-inline">IN_FULFILMENT</code> &rarr; <code class="code-inline">DELIVERED</code> &rarr; <code class="code-inline">CLOSED</code>) guarded by database triggers. The system reconciles append-only Purchase Orders (LPOs) and Goods Received Notes (GRNs) with partial delivery sign-offs and damage logs.
               </p>
             </div>
 
             <div class="pillar-block">
               <h4 class="pillar-title">Automated Schema Guards &amp; 229-Test Playwright Harness</h4>
               <p class="pillar-text">
-                Authored an 8,661-line automated CI schema guard asserting against <code class="code-inline">pg_catalog</code> (<code class="code-inline">pg_policies</code>, <code class="code-inline">pg_trigger</code>, <code class="code-inline">role_table_grants</code>) to structurally prevent permission regressions. Backed by 229 unmocked Playwright E2E tests and isolated parallel database runners in GitHub Actions CI/CD.
+                Wrote an 8,661-line automated tool that queries <code class="code-inline">pg_catalog</code> to stop migrations from dropping RLS policies, trigger rules, or table permissions. Backed by 229 unmocked Playwright browser tests running on isolated databases in CI/CD.
               </p>
             </div>
 
@@ -179,36 +179,36 @@
           </div>
 
           <p class="project-narrative">
-            Full-stack quantitative research, options derivatives pricing, and multi-agent equity analysis platform for Indian equities (NSE/BSE). Built to eliminate manual research latency by coupling deterministic quantitative pricing engines with an asynchronous multi-agent LLM debate council and a native SwiftUI iOS app.
+            Built a full-stack platform for Indian equity research (NSE/BSE) and options valuation. Combines mathematical derivatives pricing, an asynchronous multi-agent debate architecture, and a native SwiftUI iOS app to remove manual research latency.
           </p>
 
           <div class="case-study-pillars">
             
             <div class="pillar-block">
-              <h4 class="pillar-title">39 Quantitative Mathematical &amp; Risk Engines</h4>
+              <h4 class="pillar-title">39 Quantitative Math &amp; Risk Engines</h4>
               <p class="pillar-text">
-                Implemented 39 analytical valuation modules in Python/NumPy/Polars: analytical Black-Scholes European pricing and Greeks (&Delta;, &Gamma;, &Theta;, &Nu;, &Rho;), Newton-Raphson Implied Volatility solver (&le; $10^{-5}$ tolerance), Conformal prediction intervals providing 90% finite-sample coverage guarantees, Venn-Abers multi-class calibration, and 14-scenario portfolio stress testing (Nifty crash, rate hikes, liquidity crunch).
+                Wrote 39 quantitative modules in Python, NumPy, and Polars. Covers analytical Black-Scholes Greeks (&Delta;, &Gamma;, &Theta;, &Nu;, &Rho;), a Newton-Raphson Implied Volatility solver, conformal prediction with 90% finite-sample coverage guarantees, Venn-Abers multi-class calibration, and 14 portfolio stress tests (Nifty crashes, rate hikes, liquidity squeezes).
               </p>
             </div>
 
             <div class="pillar-block">
-              <h4 class="pillar-title">LangGraph 4-Agent Debate Council</h4>
+              <h4 class="pillar-title">LangGraph Multi-Agent Debate Council</h4>
               <p class="pillar-text">
-                Orchestrated a 4-persona autonomous multi-agent analysis graph (*Governance Forensics*, *Market Microstructure*, *Fundamentals*, *News &amp; Filings Intelligence*). Enforced deterministic confidence fusion algorithms with hard risk penalty caps (e.g. promoter pledging &gt;30% caps overall stock confidence score at 40%).
+                Coordinated 4 autonomous agent personas (*Governance Forensics*, *Market Microstructure*, *Fundamentals*, *News Intelligence*). Fused individual confidence scores deterministically with hard penalty caps. If promoter pledging exceeds 30%, overall stock confidence is automatically capped at 40%.
               </p>
             </div>
 
             <div class="pillar-block">
-              <h4 class="pillar-title">High-Throughput Backend &amp; Subprocess Concurrency</h4>
+              <h4 class="pillar-title">FastAPI Backend &amp; Subprocess Concurrency</h4>
               <p class="pillar-text">
-                Architected an asynchronous FastAPI backend mounting 41 modular routers and 225+ REST/SSE endpoints. Managed 67 SQLAlchemy ORM models with 29 Alembic migrations, Celery distributed task queues over Redis, and an isolated multiprocessing worker execution pool with immediate SIGTERM cancellation.
+                Built an asynchronous backend with 41 FastAPI routers and 225+ REST/SSE endpoints. Backed by 67 SQLAlchemy models, 29 Alembic migrations, Celery task queues over Redis, and isolated worker subprocesses with immediate SIGTERM cancellation.
               </p>
             </div>
 
             <div class="pillar-block">
-              <h4 class="pillar-title">Native SwiftUI iOS App &amp; Banknote Design System</h4>
+              <h4 class="pillar-title">Native SwiftUI iOS Client &amp; Banknote Design</h4>
               <p class="pillar-text">
-                Engineered a 100% native declarative SwiftUI iOS client across 77 modular views and 12 ViewModels. Built the custom Banknote design system with guilloche fine-line ornaments, tactile haptics on trade confirmations, interactive financial charts, and live WidgetKit Home Screen extensions.
+                Developed a native SwiftUI client across 77 views and 12 ViewModels with zero third-party UI dependencies. Designed the Banknote system with guilloche patterns, tactile trade feedback, interactive financial charts, and live iOS WidgetKit extensions.
               </p>
             </div>
 
@@ -245,36 +245,36 @@
           </div>
 
           <p class="project-narrative">
-            Full optimizing compiler designed in C++20 for the statically typed, imperative, array/matrix-first programming language Gazprea. Lowered source ASTs through scoped symbol resolution, semantic analysis, and Multi-Level Intermediate Representation (MLIR) across 7 dialects down to optimized LLVM IR and native target assembly. Ranked 1st in class among all submissions by passing the highest number of automated correctness test suites.
+            Designed and built an optimizing compiler in C++20 for Gazprea, an imperative matrix-first language. Lowered ASTs through scoped symbol resolution, semantic type checks, and 7 MLIR dialects down to optimized LLVM IR and machine code. Ranked 1st in class for passing the most automated correctness tests.
           </p>
 
           <div class="case-study-pillars">
             
             <div class="pillar-block">
-              <h4 class="pillar-title">CRTP Static Polymorphism &amp; AST Lowering</h4>
+              <h4 class="pillar-title">CRTP Static Polymorphism &amp; AST Traversal</h4>
               <p class="pillar-text">
-                Designed the AST visitor infrastructure utilizing the Curiously Recurring Template Pattern (CRTP) for zero-virtual-table static polymorphism and compile-time visitor dispatch, eliminating dynamic dispatch overhead during extensive AST traversal passes.
+                Structured the AST visitor system with the Curiously Recurring Template Pattern (CRTP). This replaced dynamic virtual table lookups with compile-time static dispatch, speeding up recursive AST passes.
               </p>
             </div>
 
             <div class="pillar-block">
               <h4 class="pillar-title">2,955-Line Semantic Type-Checking Subsystem</h4>
               <p class="pillar-text">
-                Primary architect and author of the semantic type checker (<code class="code-inline">TypeCheckingVisitor.cpp</code>, 2,955 lines) and type conversion specifications. Implemented bidirectional implicit promotions (<code class="code-inline">integer</code> &rarr; <code class="code-inline">real</code>), scalar-to-vector dimension expansions, array slicing, and inner-dimension validation for multidimensional matrix multiplication (<code class="code-inline">matrix[T, M, K] ** matrix[T, K, N]</code>).
+                Wrote the semantic type checker (<code class="code-inline">TypeCheckingVisitor.cpp</code>, 2,955 lines) and type conversion specifications. Handled implicit promotions (<code class="code-inline">integer</code> to <code class="code-inline">real</code>), scalar-to-vector expansions, array slicing, and inner-dimension validation for matrix multiplication (<code class="code-inline">matrix[T, M, K] ** matrix[T, K, N]</code>).
               </p>
             </div>
 
             <div class="pillar-block">
               <h4 class="pillar-title">Control-Flow Analysis &amp; Dead Code Elimination</h4>
               <p class="pillar-text">
-                Constructed basic block directed control-flow graphs (CFGs) with BFS return-path reachability verification (<code class="code-inline">allPathsLeadToReturn()</code>), performing AST-level Dead Code Elimination (DCE) to prune unreachable statements following terminated blocks.
+                Built basic-block directed control flow graphs with BFS return-path reachability checks (<code class="code-inline">allPathsLeadToReturn()</code>). Pruned unreachable statements after terminating blocks directly on the AST.
               </p>
             </div>
 
             <div class="pillar-block">
-              <h4 class="pillar-title">7-Dialect MLIR Emission &amp; LLVM Optimization Passes</h4>
+              <h4 class="pillar-title">7-Dialect MLIR Emission &amp; LLVM Optimizations</h4>
               <p class="pillar-text">
-                Emitted MLIR across 7 dialects (<code class="code-inline">func</code>, <code class="code-inline">arith</code>, <code class="code-inline">scf</code>, <code class="code-inline">cf</code>, <code class="code-inline">memref</code>, <code class="code-inline">math</code>, <code class="code-inline">LLVM</code>). Orchestrated MLIR pass managers (<code class="code-inline">Mem2Reg</code>, <code class="code-inline">CSEPass</code>, <code class="code-inline">CanonicalizerPass</code>) and LLVM <code class="code-inline">-O3</code> passes (<code class="code-inline">InstCombine</code>, <code class="code-inline">GVN</code>, <code class="code-inline">SROA</code>, <code class="code-inline">SimplifyCFG</code>) to output optimized target assembly.
+                Emitted MLIR across 7 dialects (<code class="code-inline">func</code>, <code class="code-inline">arith</code>, <code class="code-inline">scf</code>, <code class="code-inline">cf</code>, <code class="code-inline">memref</code>, <code class="code-inline">math</code>, <code class="code-inline">LLVM</code>). Ran MLIR pass managers (<code class="code-inline">Mem2Reg</code>, <code class="code-inline">CSEPass</code>) and LLVM <code class="code-inline">-O3</code> passes (<code class="code-inline">InstCombine</code>, <code class="code-inline">GVN</code>, <code class="code-inline">SROA</code>, <code class="code-inline">SimplifyCFG</code>) to emit target assembly.
               </p>
             </div>
 
@@ -298,11 +298,11 @@
 
     <hr class="divider">
 
-    <!-- Experience Section (In-Depth Technical Roles) -->
+    <!-- Experience Section (Humanized & Concrete) -->
     <section class="section" id="experience">
       <div class="section-heading-row">
         <h2 class="section-title">Work, Teaching &amp; Research Experience</h2>
-        <span class="section-sub">Chronological history &amp; technical ownership</span>
+        <span class="section-sub">Chronological history &bull; Technical ownership</span>
       </div>
 
       <div class="timeline-stack">
@@ -311,7 +311,7 @@
         <div class="timeline-card">
           <div class="entry-header">
             <div>
-              <h3 class="entry-title">Software Engineer (Sole Founding Backend &amp; Systems Architect)</h3>
+              <h3 class="entry-title">Software Engineer (Sole Backend &amp; Systems Architect)</h3>
               <div class="entry-org">BuildSouk (B2B E-Commerce Marketplace)</div>
             </div>
             <div class="entry-meta">
@@ -320,14 +320,14 @@
             </div>
           </div>
           <p class="entry-desc">
-            Architected and delivered the complete multi-tenant marketplace platform from founder specifications into production:
+            Architected the backend for a multi-tenant B2B construction marketplace from scratch:
           </p>
           <ul class="entry-bullet-list">
-            <li>Designed the PostgreSQL 16 database architecture across 54 schemas and a 4-role connection pool, enforcing kernel-level <code class="code-inline">FORCE RLS</code> policies on all tenant transactions.</li>
-            <li>Built the financial computation engine with pure <code class="code-inline">BigInt</code> micro-fils arithmetic, eliminating floating-point rounding errors on legal commercial contracts.</li>
-            <li>Engineered a deterministic 7-stage bilateral Order Finite State Machine with append-only LPO/GRN reconciliation and automated damage dispute workflows.</li>
-            <li>Authored an 8,661-line automated CI schema assertion guard against <code class="code-inline">pg_catalog</code>, pairing with 229 unmocked Playwright E2E tests in GitHub Actions.</li>
-            <li>Integrated an automated Firecrawl catalog ingestion pipeline with dual-unit normalization and Redis sliding-window rate limiters.</li>
+            <li>Configured PostgreSQL 16 across 54 schemas and a 4-role connection pool, enforcing kernel-level <code class="code-inline">FORCE RLS</code> on every tenant transaction.</li>
+            <li>Wrote the financial calculations in pure <code class="code-inline">BigInt</code> micro-fils arithmetic, preventing float rounding errors on commercial legal contracts.</li>
+            <li>Built a 7-stage bilateral Order Finite State Machine with append-only Purchase Order (LPO) and Delivery Note (GRN) reconciliation.</li>
+            <li>Created an 8,661-line automated CI schema guard that queries <code class="code-inline">pg_catalog</code> to stop permission regressions, paired with 229 unmocked Playwright browser tests in CI/CD.</li>
+            <li>Set up a Firecrawl catalog ingestion scraper with dual-unit normalization and Redis sliding-window rate limiters.</li>
           </ul>
           <div class="tags-row">
             <span class="mono-tag">TypeScript</span>
@@ -346,7 +346,7 @@
           <div class="entry-header">
             <div>
               <h3 class="entry-title">Teaching Assistant (CMPUT 201 &amp; CMPUT 229)</h3>
-              <div class="entry-org">University of Alberta — Computing Science Department</div>
+              <div class="entry-org">University of Alberta (Computing Science Department)</div>
             </div>
             <div class="entry-meta">
               <span class="entry-date">Sep 2025 – Dec 2025</span>
@@ -354,12 +354,12 @@
             </div>
           </div>
           <p class="entry-desc">
-            Taught systems programming and low-level computer organization to over 150 undergraduate students:
+            Taught systems programming and computer architecture to 150+ undergraduate students:
           </p>
           <ul class="entry-bullet-list">
-            <li>Mentored 50+ students in Practical Programming Methodology (CMPUT 201), focusing on C memory safety, pointers, heap allocation (<code class="code-inline">malloc/free</code>), memory leak profiling (<code class="code-inline">Valgrind</code>), and debugging with <code class="code-inline">GDB</code>.</li>
-            <li>Authored the reference 5-stage RISC-V pipelined CPU simulator in 1,800+ lines of assembly for Computer Organization &amp; Architecture (CMPUT 229), modeling instruction hazard detection, data forwarding, branch prediction, and cache miss penalties.</li>
-            <li>Conducted weekly laboratory walkthroughs, grading, and peer code reviews across Git workflows, Makefiles, and GCC toolchains.</li>
+            <li>Mentored 50+ students in Practical Programming Methodology (CMPUT 201) on C memory safety, pointers, heap allocation (<code class="code-inline">malloc/free</code>), memory leak tracking with <code class="code-inline">Valgrind</code>, and debugging in <code class="code-inline">GDB</code>.</li>
+            <li>Wrote the reference 5-stage RISC-V pipelined CPU simulator in 1,800+ lines of assembly for Computer Organization and Architecture (CMPUT 229), covering data hazard detection, forwarding paths, branch prediction, and cache miss penalties.</li>
+            <li>Ran weekly laboratory sessions, grading, and peer code reviews on Git workflows, Makefiles, and GCC build chains.</li>
           </ul>
           <div class="tags-row">
             <span class="mono-tag">C Programming</span>
@@ -385,11 +385,11 @@
             </div>
           </div>
           <p class="entry-desc">
-            Conducted systems research on optimizing compiler pipelines and pipelined RISC-V processor architectures:
+            Researched compiler optimization and RISC-V processor pipelines under Prof. J. Nelson Amaral:
           </p>
           <ul class="entry-bullet-list">
-            <li>Developed automated verification harnesses to benchmark binary execution latency, register allocation efficiency, and cache utilization patterns across optimizing compiler passes.</li>
-            <li>Analyzed instruction-level parallelism, branch predictor accuracy, and memory pipeline bottlenecks under simulated workload traces.</li>
+            <li>Built automated benchmarks to measure execution latency, register allocation efficiency, and cache utilization across compiler passes.</li>
+            <li>Analyzed instruction-level parallelism, branch predictor accuracy, and memory bottlenecks under hardware simulation traces.</li>
           </ul>
           <div class="tags-row">
             <span class="mono-tag">Compilers</span>
@@ -413,11 +413,11 @@
             </div>
           </div>
           <p class="entry-desc">
-            Engineered automated cloud pipelines and enterprise integration services:
+            Built cloud automation pipelines and enterprise integrations:
           </p>
           <ul class="entry-bullet-list">
-            <li>Built automated CI/CD and deployment pipelines on Microsoft Azure with third-party REST API integrations, reducing manual release turnaround time by 30%.</li>
-            <li>Engineered automated business logic and ERP workflow modules in Python and JavaScript (Frappe Framework), cutting manual data reconciliation overhead by 30%.</li>
+            <li>Configured automated CI/CD and deployment pipelines on Microsoft Azure with third-party REST API integrations, cutting manual deployment turnaround by 30%.</li>
+            <li>Created business logic and ERP workflow modules in Python and JavaScript (Frappe Framework), reducing manual data processing by 30%.</li>
           </ul>
           <div class="tags-row">
             <span class="mono-tag">Python</span>

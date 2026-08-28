@@ -1,5 +1,5 @@
 /**
- * Saumya Patel — Minimalist Portfolio Scripts
+ * Saumya Patel | Minimalist Portfolio Scripts
  * Fast, Vanilla JS, Zero Dependencies
  */
 
